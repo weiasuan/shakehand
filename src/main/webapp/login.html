@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <!--自己写的css-->
+    <link href="css/login.css" rel="stylesheet" >
+
+    <!--JS-->
+    <script src="js/jquery-3.3.1.js" type="application/javascript"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="layer/layer.js"></script>
+    <!--自己写JS-->
+    <script src="js/login_js.js" type="application/javascript"></script>
+</head>
+<body>
+    <div id="back_top"></div>
+    <div id="back_foot"></div>
+    <div id="home">
+        <div id="job">
+            <ul class="find">找工作</ul>
+            <ul class="word">专注互联网职业机会</ul>
+            <img src="images_login/worker.png">
+            <div class="go peo_go"><a>去找工作</a></div>
+        </div>
+        <div id="people">
+            <ul class="find">招人</ul>
+            <ul class="word">互联网人都在握手</ul>
+            <img src="images_login/hr.png">
+            <div class="go go_company"><a>去发布职位</a></div>
+        </div>
+    </div>
+    <div id="find_job">
+        <ul class="find_job">
+            <li>找工作</li>
+            <h>|</h>
+            <span>专注互联网职业机会</span>
+            <a class="want_people">我要招人<img src="images_login/right_.png"> </a>
+        </ul>
+        <div class="left-arrow">
+            <form class="tel" method="post" action="">
+                <div class="phone_num" id="find_job_phone_num">
+                    <span>0086 <img src="images_login/down.png"></span>
+                    <input type="text" name="phone_num"placeholder="请输入常用手机号" data-required="required" autocomplete="off">
+                </div>
+            </form>
+            <div class="num">
+                <input class="text" name="back_phone" placeholder="请输入验证码">
+                <input class="button"  type="button" value="获取验证码">
+            </div>
+            <input class="re_but" type="button" value="注 册">
+            <ul class="foot_text"><li>注册代表你已同意</li><a>「握手用户协议」</a></ul>
+        </div>
+        <div class="divider"></div>
+        <div class="right-arrow">
+            <ul>已有账号：</ul>
+            <ul><a class="want_login">直接登录<img src="images_login/right_login.png"></a></ul>
+        </div>
+    </div>
+    <div id="find_peoper">
+        <ul class="find_job">
+            <li>招人</li>
+            <h>|</h>
+            <span>互联网人才都在握手</span>
+            <a class="want_job">我要找工作<img src="images_login/right_.png"> </a>
+        </ul>
+        <div class="left-arrow">
+            <form class="tel" method="post" action="">
+                <div class="phone_num">
+                    <span>0086 <img src="images_login/down.png"></span>
+                    <input  name="phone_num" placeholder="请输入常用手机号" data-required="required" autocomplete="off">
+                </div>
+            </form>
+            <div class="num">
+                <input class="text" name="back_phone" placeholder="请输入验证码">
+                <input class="button" type="button" value="获取验证码">
+            </div>
+            <input class="re_but" type="button" value="注 册">
+            <ul class="foot_text"><li>注册代表你已同意</li><a>「握手用户协议」</a></ul>
+        </div>
+        <div class="divider"></div>
+        <div class="right-arrow">
+            <ul>已有账号：</ul>
+            <ul><a class="want_login">直接登录<img src="images_login/right_login.png"></a></ul>
+        </div>
+    </div>
+    <div id="login">
+        <div class="login">
+            <div class="top">
+                <li>密码登录</li>
+                <li>验证码登录</li>
+            </div>
+            <div class="psw">
+                <form class="tel" method="post" action="">
+                    <div class="phone_num">
+                        <input type="text" class="login_num" name="tel" placeholder="请输入常用手机号" data-required="required" autocomplete="off">
+                    </div>
+                </form>
+                <div class="num">
+                    <input class="login_text text" type="password" name="text" placeholder="请输入密码">
+                </div>
+                <ul>忘记密码</ul>
+            </div>
+            <input class="re_but" type="button" value="登 录">
+        </div>
+        <div class="divider"></div>
+        <div class="go_master"><a>管理员登录  <img src="images_login/right_.png"> </a></div>
+        <div class="right-arrow">
+            <ul>还没有账号：</ul>
+            <ul><a class="go_res">立即注册<img src="images_login/right_login.png"></a></ul>
+        </div>
+    </div>
+    <div id="login_master">
+        <div class="login">
+            <div class="top">
+                <li>密码登录</li>
+            </div>
+            <div class="psw">
+                <form class="tel" method="post" action="">
+                <div class="phone_num">
+                    <input type="text" class="login_num" name="tel" placeholder="请输入常用手机号" data-required="required" autocomplete="off">
+                </div>
+                </form>
+                <div class="num">
+                    <input class="text login_text " name="text" type="text" placeholder="请输入密码">
+                </div>
+                <ul>忘记密码</ul>
+            </div>
+            <input class="re_but" type="button" value="登录">
+        </div>
+        <div class="divider"></div>
+        <div class="go_people"><a>普通用户登录  <img src="images_login/right_.png"> </a></div>
+    </div>
+</body>
+</html>

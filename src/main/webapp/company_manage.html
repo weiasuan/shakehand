@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公司后台</title>
+    <!--CSS-->
+    <!--基础+头部+尾部-->
+    <link href="css/header.css" type="text/css" rel="stylesheet">
+    <link href="css/footer.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+    <!--自己写的css-->
+    <link href="css/company_manage.css" rel="stylesheet" type="text/css">
+    <!--JS-->
+    <script src="js/jquery-3.3.1.js" type="application/javascript"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="layer/layer.js"></script>
+    <!--自己写JS-->
+    <script src="js/company_manage_js.js"></script>
+
+
+</head>
+<style>
+    .form-control{
+        width: 50%;
+    }
+    .editHome{
+        width: 70%;
+    }
+    .page_title{
+        width: 100%;
+    }
+    .content{
+        text-align: center;
+        width: 100%;
+    }
+    .nav-pills{
+        width: 15%;
+        margin-right: 5%;
+    }
+    .first_list{
+        height: 35px;
+        width: 52%;
+        margin-left: -2%;
+        margin-top: 10px;
+    }
+    .btn-primary{
+        background-color: #009688;
+        border-color: transparent;
+        width: 170px;
+        height: 70px;
+        margin-left: -20%;
+    }
+    .Search{
+        width: 35%;
+        height: 45px
+    }
+    .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+        color: #fff;
+        background-color:  #08d7a2;
+    }
+    .nav>li>a:hover, .nav>li>a:focus {
+        text-decoration: none;
+        background-color: #eee;
+    }
+    .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+        z-index: 2;
+        color: #fff;
+        cursor: default;
+        background-color: #08d7a2;
+        border-color: #08d7a2;
+    }
+    .col-lg-2{
+        position: relative;
+        min-height: 1px;
+        padding-right: 1px;
+        padding-left: 0px;
+    }
+    .table>tbody>tr>td, .table>tfoot>tr>td {
+        padding: 2px;
+        line-height: 2;
+        vertical-align: top;
+        border-top: 1px solid #ddd;
+    }
+    .Table_Search{
+        width: 573px;
+        line-height: 40px;
+        margin-left: 65%;
+        margin-top: 1%;
+        font-size: 20px;
+    }
+
+
+</style>
+<body>
+<!--头部导航栏-->
+<div id="sh_header">
+    <!--头部黑色导航栏-->
+    <div id="sh_tbar">
+        <div class="sh_tbar_1">
+            <a>握手APP</a>
+            <a href="company_manage.html">进入企业版</a>
+        </div>
+        <ul class="sh_tbar_r">
+            <li class="msg_dropdown"><a>消息</a></li>
+            <li class="user_dropdown">
+                <a href="userinfo.html">用户</a>
+                <em></em>
+            </li>
+        </ul>
+    </div>
+    <!--头部白色导航栏-->
+    <div id="sh_tnav">
+        <div class="inner">
+            <div class="sh_tnav_1">
+                <a><i></i><h1>握手网</h1></a>
+            </div>
+            <ul class="sh_tnav_wrap">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="company_search.html">公司</a></li>
+                <li><a href="position_search.html">职位</a></li>
+                <li><a href="school.html">校园</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+    <div class="lg_header">
+        <div id="lg_tnav">
+
+        </div>
+
+    </div>
+        <div class="content">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="javascript:;" id="nav_company" class="navs">编辑主页</a></li>
+                <li><a href="javascript:;" id="nav_Job" class="navs">发布招聘信息</a></li>
+                <li><a href="javascript:;" id="nav_JobInfo" class="navs">查看发布信息</a></li>
+                <li><a href="javascript:;" id="nav_ResumeInfo" class="navs">简历箱</a></li>
+            </ul>
+            <div class="editHome" id="Company" style="display: none"ihllh>
+                <div class="page_title">
+                    <h1>
+                        <img src="img/edit1.png" style="width: 60px;height: 60px">
+                        <i>编辑主页</i>
+                    </h1>
+                </div>
+                <form class="card">
+                        <div class="col-lg-6">
+                            <div class="record">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group" >
+                                            <label class="col-lg-2 control-label" for="CName" id="cname1" style="margin-top: 15px">公司全称</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control first_list" id="CName" type="text" placeholder="请输入公司全称" >
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div><br>
+                            <div class="record">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="RegName">注册姓名</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="RegName" type="text" placeholder="请输入注册姓名">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="record">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="Email">注册邮箱</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="Email" type="text" placeholder="请输入注册邮箱">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="record">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="CName">公司电话</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="CompanyTel" type="text" placeholder="请输入公司电话">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="record">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="CName">公司地址</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="CompanyAd" type="text" placeholder="请输入公司地址">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="record">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="CLogo">公司LOGO</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="CLogo" type="file" placeholder="请上传公司LOGO图片" style="height: 50px;line-height: 45px">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="record">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="textArea">公司简介</label>
+                                            <div class="col-lg-10">
+                                                <textarea class="form-control" id="textArea"  placeholder="请输入公司简介"></textarea>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="record">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label" for="Step" style="margin-top: 9px">融资阶段</label>
+                                        <div class="col-lg-10">
+                                            <select class="form-control first_list" id="Step" type="text" placeholder="请选择融资阶段" style="width: 50%;margin-left: 1%" >
+                                                <option>未融资</option>
+                                                <option>天使轮</option>
+                                                <option>A轮</option>
+                                                <option>B轮</option>
+                                                <option>C轮</option>
+                                                <option>D轮</option>
+                                                <option>上市公司</option>
+                                                <option>不需要融资</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                            <div class="record">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="Field">行业领域</label>
+                                            <div class="col-lg-10">
+                                                <select class="form-control" id="Field"  placeholder="请选择行业领域">
+                                                    <option>移动互联网</option>
+                                                    <option>电子商务</option>
+                                                    <option>金融</option>
+                                                    <option>企业服务</option>
+                                                    <option>教育</option>
+                                                    <option>文化娱乐</option>
+                                                    <option>游戏</option>
+                                                    <option>O2O</option>
+                                                    <option>硬件</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="record">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="Size">公司规模</label>
+                                            <div class="col-lg-10">
+                                                <select class="form-control" id="Size"  placeholder="请选择公司规模">
+                                                    <option>少于15人</option>
+                                                    <option>15-50人</option>
+                                                    <option>50-150人</option>
+                                                    <option>150-500人</option>
+                                                    <option>500-2000人</option>
+                                                    <option>2000人以上</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="record">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="PInfo">产品信息</label>
+                                            <div class="col-lg-10">
+                                                <textarea class="form-control" id="PInfo"  placeholder="请输入产品信息"></textarea>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="record">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label" for="CInfo">公司介绍</label>
+                                            <div class="col-lg-10">
+                                                <textarea class="form-control" id="CInfo"  placeholder="请输入公司介绍"></textarea>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <button class="btn btn-primary" type="submit">发布</button>
+                        </div>
+                </form>
+            </div>
+            <div class="editHome" id="JobInfo" style="display: none" >
+                <div class="page_title">
+                    <h1>
+                        <img src="img/edit1.png" style="width: 60px;height: 60px">
+                        <i>查看招聘信息</i>
+                    </h1>
+                </div>
+                <div class="card">
+                    <div id="JobTable">
+                        <div class="row">
+                            <fieldset>
+                                <div class="form-group Table_Search">
+                                    <label class="col-lg-2 control-label" for="SearchJob">查找</label>
+                                    <div class="col-lg-10" style="width: 63%">
+                                        <input class="form-control Search" id="SearchJob" type="search">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="Jtable">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr><th>岗位</th><th>工作地点</th><th>工作性质</th><th>学历要求</th><th>工作经验</th><th>月薪</th><th>时间</th><th>操作</th></tr>
+                            </thead>
+                            <tbody>
+                            <tr><td>JAVA工程师</td><td>北京</td><td>全职</td><td>本科</td><td>应届毕业生</td><td>5k-10k</td><td>2018-1-1 22:00</td><td><button type="button" class="btn btn-danger">删除</button></td></tr>
+                            <tr><td>JAVA工程师</td><td>北京</td><td>全职</td><td>本科</td><td>应届毕业生</td><td>5k-10k</td><td>2018-1-1 22:00</td><td><button type="button" class="btn btn-danger">删除</button></td></tr>
+                            <tr><td>JAVA工程师</td><td>北京</td><td>全职</td><td>本科</td><td>应届毕业生</td><td>5k-10k</td><td>2018-1-1 22:00</td><td><button type="button" class="btn btn-danger">删除</button></td></tr>
+                            <tr><td>JAVA工程师</td><td>北京</td><td>全职</td><td>本科</td><td>应届毕业生</td><td>5k-10k</td><td>2018-1-1 22:00</td><td><button type="button" class="btn btn-danger">删除</button></td></tr>
+                            <tr><td>JAVA工程师</td><td>北京</td><td>全职</td><td>本科</td><td>应届毕业生</td><td>5k-10k</td><td>2018-1-1 22:00</td><td><button type="button" class="btn btn-danger">删除</button></td></tr>
+                            </tbody>
+                        </table>
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#">&laquo;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="editHome" id="Job">
+                <div class="page_title">
+                    <h1>
+                        <img src="img/edit1.png" style="width: 60px;height: 60px">
+                        <i>编辑招聘信息</i>
+                    </h1>
+                </div>
+                <form class="card">
+                    <div class="col-lg-6">
+                        <br><div class="record">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label" for="PName">岗位名称</label>
+                                    <div class="col-lg-10">
+                                        <input class="form-control first_list" id="PName" type="text" placeholder="请输入岗位名称" style="margin-top: -5px">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div><br>
+                        <div class="record">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label" for="WorkPlace">工作地点</label>
+                                        <div class="col-lg-10">
+                                            <input class="form-control" id="WorkPlace" type="text" placeholder="请输入工作地点">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div><br>
+                        <div class="record">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label" for="JobType">工作性质</label>
+                                        <div class="col-lg-10">
+                                            <select class="form-control" id="JobType" type="text" placeholder="请选择工作性质">
+                                                <option name="job_type">不限</option>
+                                                <option name="job_type">全职</option>
+                                                <option name="job_type">兼职</option>
+                                                <option name="job_type">实习</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div><br>
+                        <div class="record">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label" for="EduRequest">学历要求</label>
+                                        <div class="col-lg-10">
+                                            <select class="form-control" id="EduRequest" type="text" placeholder="请选择学历要求">
+                                                <option name="edu">不限</option>
+                                                <option name="edu">大专</option>
+                                                <option name="edu">本科</option>
+                                                <option name="edu">硕士</option>
+                                                <option name="edu">博士</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div><br>
+                        <div class="record">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label" for="WorkExp">工作经验</label>
+                                        <div class="col-lg-10">
+                                            <select class="form-control" id="WorkExp" type="text" placeholder="请输入选择工作经验">
+                                                <option name="experience">不限</option>
+                                                <option name="experience">应届毕业生</option>
+                                                <option name="experience">3年及以下</option>
+                                                <option name="experience">3-5年</option>
+                                                <option name="experience">5-10年</option>
+                                                <option name="experience">10年以上</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div><br>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <br><div class="record">
+                        <form class="form-horizontal">
+                            <fieldset style="margin-left: 20px">
+                                <div class="form-group" style="margin-left: -27px">
+                                    <label class="col-lg-2 control-label" for="Salary" style="margin-top: 9px;padding-right: 5px">月薪</label>
+                                    <div class="col-lg-10">
+                                        <select class="form-control first_list" id="Salary" type="text" placeholder="请选择月薪">
+                                            <option name="salary">面谈</option>
+                                            <option name="salary">2k以下</option>
+                                            <option name="salary">2k-5k</option>
+                                            <option name="salary">5k-10k</option>
+                                            <option name="salary">10k-15k</option>
+                                            <option name="salary">15k-25k</option>
+                                            <option name="salary">25k以上</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                        <div class="record">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label" for="Attraction">职位诱惑</label>
+                                        <div class="col-lg-10">
+                                            <textarea class="form-control" id="Attraction"  placeholder="请输入公司福利"></textarea>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="record">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label" for="JInfo">职位描述</label>
+                                        <div class="col-lg-10">
+                                            <textarea class="form-control" id="JInfo"  placeholder="请输入职位描述"></textarea>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <button class="btn btn-primary" type="submit" style="margin-top: 78px">发布</button>
+                    </div>
+                </form>
+            </div>
+            <div class="editHome" id="ResumeInfo" style="display: none">
+                <div class="page_title">
+                    <h1>
+                        <img src="img/edit1.png" style="width: 60px;height: 60px">
+                        <i>查看简历箱</i>
+                    </h1>
+                </div>
+                <div class="card">
+                    <div id="ResumeTable">
+                        <div class="row">
+                            <fieldset>
+                                <div id="" class="form-group Table_Search">
+                                    <label class="col-lg-2 control-label" for="Search"">查找</label>
+                                    <div class="col-lg-10" style="width: 63%">
+                                        <input class="form-control Search" id="Search" type="search">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="Jtable">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr><th>已读</th><th>姓名</th><th>职位</th><th>时间</th><th>操作</th></tr>
+                            </thead>
+                            <tbody>
+                            <tr><td>是</td><td>郭靖</td><td>JAVA工程师</td><td>2018-1-1 19:00</td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">不合适</button>
+                                    <button type="button" class="btn btn-info">待沟通</button>
+                                    <button type="button" class="btn btn-success">邀请面试</button>
+                                </td>
+                            </tr>
+                            <tr><td>是</td><td>郭靖</td><td>JAVA工程师</td><td>2018-1-1 19:00</td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">不合适</button>
+                                    <button type="button" class="btn btn-info">待沟通</button>
+                                    <button type="button" class="btn btn-success">邀请面试</button>
+                                </td>
+                            </tr>
+                            <tr><td>是</td><td>郭靖</td><td>JAVA工程师</td><td>2018-1-1 19:00</td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">不合适</button>
+                                    <button type="button" class="btn btn-info">待沟通</button>
+                                    <button type="button" class="btn btn-success">邀请面试</button>
+                                </td>
+                            </tr>
+                            <tr><td>是</td><td>郭靖</td><td>JAVA工程师</td><td>2018-1-1 19:00</td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">不合适</button>
+                                    <button type="button" class="btn btn-info">待沟通</button>
+                                    <button type="button" class="btn btn-success">邀请面试</button>
+                                </td>
+                            </tr>
+                            <tr><td>是</td><td>郭靖</td><td>JAVA工程师</td><td>2018-1-1 19:00</td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">不合适</button>
+                                    <button type="button" class="btn btn-info">待沟通</button>
+                                    <button type="button" class="btn btn-success">邀请面试</button>
+                                </td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#">&laquo;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--底部 footer-->
+    <div id="footer">
+        <div class="wrapper">
+            <div class="inner_wrapper">
+                <div class="footer_module_column">
+                    <a class="footer_app">
+                        <i class="footer_app_icon"></i>
+                        下载握手APP
+                        <img src="">
+                    </a>
+                    <a class="footer_mina">
+                        <i class="footer_mina_item"></i>
+                        微信小程序
+                        <img>
+                    </a>
+                    <div class="footer_module_item">
+                        <a class="footer_wechat">
+                            <i class="footer_wechat_icon"></i>
+                            握手微信
+                            <img>
+                        </a>
+                        <a class="footer_webo">
+                            <i class="footer_webo_icon"></i>
+                            拉钩微博
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_module_right">
+                    <div class="footer_module_business">
+                        <p>企业服务</p>
+                        <a>招聘解决方案</a>
+                        <a>公司搜索</a>
+                        <a>握手APP</a>
+                    </div>
+                    <div class="footer_module_business">
+                        <p>用户帮助</p>
+                        <a>帮助中心</a>
+                        <a>用户服务协议</a>
+                        <a>在线提问</a>
+                    </div>
+                    <div class="footer_module_business">
+                        <p>联系方式</p>
+                        <span>
+                            服务热线:<em>4000 1234 56 (9:00-18:00)</em>
+                        </span>
+                        <a>
+                            企业服务邮箱:
+                            <em>qwB@shakehand.com</em>
+                        </a>
+                        <a>联系我们</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyright_main">
+                    <div class="copyright_main_left">
+                        <span class="copyright_title">
+                            <em>©</em>
+                            2018握手网
+                        </span>
+                        <a>京ICP备12345678号-2</a>
+                        <a class="footer_gongan">
+                            <i class="footer_gongan_i"></i>
+                            京公网安备 11010802024043
+                        </a>
+                        <div class="footer_jubao">
+                            <i class="jubao"></i>
+                            <p>
+                                <span>违法和不良信息举报</span>
+                                <strong>4006 2828 35</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <i class="footer_icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>

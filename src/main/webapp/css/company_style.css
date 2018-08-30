@@ -1,0 +1,256 @@
+#all{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#content-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#company_list_container{
+    padding-bottom: 100px;
+}
+#positionHead{
+    margin-bottom: 20px;
+}
+#filterBox{
+    position: relative;
+    margin-top: 35px;
+    padding: 8px 0;
+    background-color: #fafafa;
+    border: 1px solid #ededed;
+    min-height: 36px;
+}
+.details{
+    position: relative;
+    overflow: visible;
+    background: #fafafa;
+}
+.has-more{
+    z-index: 10;
+    height: 31px;
+}
+.title{
+    font-weight: 600;
+    margin-right: -5px;
+    margin-left: 15px;
+    padding: 4px 8px;
+    height: 14px;
+    line-height: 14px;
+    float: left;
+}
+.city-wrapper{
+    width: 90%;
+    height: 22px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+.details a{
+    padding: 4px 8px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    height: 14px;
+    line-height: 14px;
+}
+.details a:hover{
+    background-color: #00b38a;
+    color: #fff;
+}
+.multi-chosen{
+    width: 100%;
+    height: 31px;
+    z-index: 6;
+    zoom: 1;
+    color: #555;
+    border-bottom: 1px dashed transparent;
+}
+.btn-more{
+    color: #555;
+    font-weight: 400;
+    z-index: 13;
+    position: absolute;
+    right: 5px;
+    margin: 0 16px;
+    background-color: transparent;
+}
+
+.btn-more i{
+    position: absolute;
+    top: 9px;
+    right: -3px;
+    font-size: 0;
+    height: 0;
+    width: 0;
+    border-width: 6px 6px 0;
+    border-style: solid dashed;
+    border-color: #00b38a transparent transparent;
+    overflow: hidden;
+    transition: all .4s ease 0s;
+}
+.btn-more i:hover{
+    transform: rotate(180deg);
+}
+.sub_filter{
+    position: relative;
+    margin-top: 13px;
+    background-color: #fafafa;
+    border: 1px solid #ededed;
+}
+.wrapper{
+    zoom: 1;
+    color: #555;
+    font-size: 14px;
+    height: 43px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.item-order{
+    margin-right: 35px;
+    padding: 10px 0;
+    height: 23px;
+    line-height: 23px;
+}
+.item-order a{
+    margin-right: 5px;
+    padding: 5px 8px;
+    height: 14px;
+    line-height: 14px;
+}
+.item-order a:hover{
+    background-color: #00b38a;
+    color: #fff;
+}
+.active{
+    background-color: #00b38a;
+    color: #fff;
+}
+
+
+
+#ad-company{
+    display: inline-block;
+}
+.ad-company-list{
+    width: 1216px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.company-item{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 280px;
+    height: 270px;
+    margin-top: 16px;
+    margin-right: 16px;
+    border: 1px solid #EEE;
+}
+.company-item:hover{
+    box-shadow:1px 1px 1px 1px #EAEEED;
+}
+.company-top{
+    margin: 0 13px;
+    padding: 20px 0 14px;
+    text-align: center;
+    border-bottom: 1px dashed #E0E0E0;
+}
+.company-top img{
+    width: 80px;
+    height: 80px;
+    border: 0;
+    vertical-align: top;
+    display: inline-block;
+}
+.company-top a{
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+    text-decoration: none;
+}
+.company-top span{
+    color: #999;
+    line-height: 22px;
+}
+.company-top p{
+    margin-top: 5px;
+    color: #555;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.company-bottom{
+
+}
+.company-bottom a{
+    width: 90px;
+    margin-top: 17px;
+    text-align: center;
+    float: left;
+    background-color: transparent;
+    text-decoration: none;
+}
+.company-bottom span{
+    color: #00b38a;
+    line-height: 1;
+}
+.company-bottom p{
+    margin-top: 4px;
+    font-size: 13px;
+    color: #999;
+    line-height: 1;
+}
+
+
+.item-con-pager{
+    margin: 35px 0;
+    text-align: center;
+}
+.item-con-pager span{
+    cursor: pointer;
+    color: #555;
+    display: inline-block;
+    border: 1px solid #ededed;
+    height: 21px;
+    line-height: 21px;
+    padding: 3px 10px;
+    margin: 0 5px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.item-con-pager span:hover{
+    background-color: #00b38a;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    width: 100%;
+    height: 354px;
+    z-index: 1002;
+}
+
+
+
+
+
+
+

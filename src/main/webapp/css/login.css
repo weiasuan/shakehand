@@ -1,0 +1,334 @@
+#back_top{
+    width: 100%;
+    height: 320px;
+    background-color: #00b38a;
+    border: 1px solid #00b38a;
+}
+#back_foot{
+    width: 100%;
+    height: 320px;
+    background-color: ghostwhite;
+    border: 1px solid white;
+}
+
+
+#home{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    position: absolute;
+    top:100px;
+    left: 350px;
+    display: none;
+}
+#job{
+    width: 250px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 25px;
+    border-right: 1px  dashed gainsboro;
+}
+.find{
+    size: 24px;
+    margin-left:45px;
+}
+.word{
+    size: 14px;
+    color: #999;
+    margin: auto;
+}
+#job img{
+    margin-top: 20px;
+}
+.go{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #00b38a;
+    margin: 10px auto;
+    text-align: center;
+    color: #00b38a;
+}
+#people{
+    width: 250px;
+    height: 300px;
+    margin-top: -315px;
+    margin-left: 300px;
+}
+#people img{
+    margin-left: 10px;
+    margin-top: 11px;
+}
+
+
+#find_job{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    position: absolute;
+    top:100px;
+    left: 350px;
+   display: none;
+}
+.find_job{
+    width: 450px;
+    height: 40px;
+    margin: 40px 50px;
+    display: inline-block;
+}
+.find_job li{
+    margin-left: -10px;
+    line-height: 40px;
+    display: inline-block;
+    font-size: 20px;
+}
+.find_job span{
+    font-size: 14px;
+}
+.find_job a{
+    color: #00b38a;
+    margin-left: 180px;
+}
+.left-arrow{
+    width: 250px;
+    margin-left:80px ;
+}
+.phone_num{
+    width: 250px;
+    height: 50px;
+    border-bottom: 1px solid gainsboro;
+}
+.phone_num span{
+    width: 50px;
+    height: 44px;
+    padding-right: 22px;
+    line-height: 44px;
+    cursor: default;
+}
+#find_job .phone_num input{
+    width:171px;
+    height:44px ;
+    border: 0px;
+    color:#333;
+    outline: none;
+    font-size: 14px;
+}
+.num{
+    width: 250px;
+    height: 50px;
+    border-bottom: 1px solid gainsboro;
+}
+.text{
+    width: 110px;
+    height:40px;
+    line-height: 50px;
+    border: 0px;
+    font-size: 14px;
+    outline: none;
+}
+.button{
+    width: 90px;
+    height: 44px;
+    float: right;
+    color: #00b38a;
+    font-size: 14px;
+    border:0px;
+    background-color:transparent;
+}
+.re_but{
+    width: 250px;
+    height: 50px;
+    color: white;
+    margin-top: 30px;
+    background-color: #00b38a;
+    border-radius: 0px;
+    border: 0px ;
+}
+.foot_text{
+    width: 250px;
+    font-size: 14px;
+}
+.foot_text li{
+    margin-left: -20px;
+    display: inline-block;
+    color:darkgray;
+}
+.foot_text a{
+    color: #00b38a;
+}
+.divider{
+    border-left: 1px dashed #ededed;
+    height: 250px;
+    color: #d8d8d8;
+    margin: -230px 400px;
+}
+.divider:after {
+    position: absolute;
+    content: "or";
+    left: 400px;
+    top: 230px;
+    padding: 2px;
+    background-color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.right-arrow{
+    margin-left: 400px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.right-arrow a{
+    color: #00b38a;
+    margin-right: 10px;
+}
+.right-arrow img{
+    margin-left: 10px;
+    margin-top: -2px;
+}
+
+#find_peoper{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    position: absolute;
+    top:100px;
+    left: 350px;
+    display: none;
+}
+#find_peoper .phone_num input{
+    width:171px;
+    height:44px ;
+    border: 0px;
+    color:#333;
+    outline: none;
+    font-size: 14px;
+}
+
+#login{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    position: absolute;
+    top:100px;
+    left: 350px;
+}
+.login{
+    width: 250px;
+    height: 400px;
+    margin: 70px 70px 50px;
+    display: inline-block;
+}
+.top li{
+    width:120px ;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+.top{
+    border-bottom: 1px solid gainsboro;
+}
+.login ul{
+    font-size: 14px;
+    color: #00b38a;
+    float: right;
+}
+#login .divider{
+    border-left: 1px dashed #ededed;
+    height: 250px;
+    color: #d8d8d8;
+    margin: -430px 400px;
+}
+#login .right-arrow{
+    margin-left: 400px;
+    margin-top: 300px;
+    font-size: 14px;
+}
+.psw{
+    width: 255px;
+    height:150px;
+}
+.go_master a{
+    width: 130px;
+    height: 30px;
+    color: #00b38a;
+    margin-left: 180px;
+    position: absolute;
+    top:70px;
+    left:270px;
+    font-size: 18px;
+}
+
+.login_num{
+    width: 120px;
+    height:44px ;
+    border: 0px;
+    color:#333;
+    outline: none;
+    font-size: 14px;
+
+}
+.login_text{
+    width: 120px;
+    height:44px;
+    line-height: 50px;
+    border: 0px;
+    font-size: 14px;
+    outline: none;
+}
+
+#login_master{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    position: absolute;
+    top:100px;
+    left: 350px;
+    display: none;
+}
+#login_master .divider{
+    border-left: 1px dashed #ededed;
+    height: 250px;
+    color: #d8d8d8;
+    margin: -440px 400px;
+}
+.go_people a{
+    width: 130px;
+    height: 30px;
+    color: #00b38a;
+    margin-left: 180px;
+    position: absolute;
+    top:70px;
+    left:270px;
+    font-size: 18px;
+}
+.error{
+    color: red;
+    width: 80px;
+    float: initial;
+    font-size: 12px;
+}
+
+.re_phone{
+    width: 200px;
+    height: 16px;
+    color:red;
+    font-size: 12px;
+    float: left;
+    margin-top: -3px;
+
+}
+.back_phone{
+    color: red;
+    font-size: 12px;
+    margin-top: -8px;
+}
+
+
+

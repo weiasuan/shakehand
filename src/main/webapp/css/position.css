@@ -1,0 +1,435 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
+    color: #333;
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+div {
+    display: block;
+}
+a {
+    color: #555;
+    background-color: transparent;
+    text-decoration: none;
+}
+* {
+    outline: 0;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+#top_bannerC {
+    width: 100%;
+    min-width: 1024px;
+    height: 80px;
+    background-size: 100% 100%;
+    background:url("https://www.lgstatic.com/i/image2/M01/7C/89/CgotOVt0DnaAMUQ3AAHP3FEQqUA826.JPG")no-repeat;
+}
+#lg_tbar {
+    min-width: 1024px;
+    height: 30px;
+    background-color: #333;
+}
+#lg_tnav {
+    min-width: 1024px;
+    height: 54px;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fafafa;
+}
+#lg_tnav .lg_tnav_wrap a:hover{
+    color: black;
+    border-bottom: 2px solid #00b38a;
+}
+#lg_tnav .inner {
+    width: 1024px;
+    margin: 0 auto;
+}
+#lg_tnav .lg_tnav_l {
+    float: left;
+    width: 260px;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#lg_tnav .lg_logo h1 {
+    float: left;
+    width: 97px;
+    height: 34px;
+    margin: 10px 0 0;
+    padding: 0;
+    background-image: url(//www.lgstatic.com/www/static/common/widgets/header_c/modules/img/logo_1c5763c.png);
+    background-size: 97px 34px;
+    overflow: hidden;
+    text-indent: -99em;
+}
+#lg_tnav .lg_tnav_wrap {
+    float: left;
+}
+#lg_tnav .lg_tnav_wrap li {
+    display: inline-block;
+    margin: 0 16px;
+    position: relative;
+}
+#lg_tnav .lg_tnav_wrap li a {
+    display: block;
+    font-size: 18px;
+    color: #999;
+    line-height: 53px;
+    padding: 0 5px;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+#lg_tnav .lg_tnav_wrap li a.current {
+    color: black;
+    border-bottom: 2px solid #00b38a;
+}
+.position-head {
+    background-color: #f2f5f4;
+    padding: 30px 0 11px;
+    width: 100%;
+    min-width: 1024px;
+}
+.position-head .position-content {
+    position: relative;
+    width: 1024px;
+    height: 174px;
+    margin: 0 auto;
+}
+.position-head .position-content .position-content-l {
+    float: left;
+    max-width: 696px;
+}
+.position-head .position-content .position-content-l .job-name {
+    margin: 0 0 13px;
+}
+.position-head .position-content .position-content-l .job-name .company {
+    margin: -2px 0 8px 0;
+    font-size: 14px;
+    color: #555;
+    position: relative;
+    left: 2px;
+}
+.position-head .position-content .position-content-l .job-name .name {
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    font-size: 36px;
+    color: #333;
+    line-height: 36px;
+}
+.position-head .position-content .position-content-l .job_request {
+    margin-top: 2px;
+    font-size: 18px;
+    color: #555;
+    margin-left: 0px;
+}
+.position-head .position-content .position-content-l .job_request p {
+    margin-bottom: 8px;
+}
+.position-head .position-content .position-content-l .job_request p .salary {
+    color: #fd5f39;
+}
+.position-head .position-content .position-content-l .job_request .publish_time {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #999;
+}
+dd {
+    display: block;
+    -webkit-margin-start: 40px;
+}
+.position-head .position-content .position-content-l .job_request .position-label .labels {
+    margin-top: 8px;
+    float: left;
+    height: 22px;
+    margin-right: 8px;
+    padding: 0 10px;
+    line-height: 22px;
+    background-color: #fff;
+    color: #70797b;
+    font-size: 12px;
+    border-radius: 10px;
+}
+.position-head .position-content .position-content-r {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    max-width: 328px;
+}
+.position-head .position-content .position-content-r .position-deal {
+    margin-top: 10px;
+    position: relative;
+}
+.position-head .position-content .position-content-r .position-deal .resume-deliver {
+    position: relative;
+    float: right;
+}
+.fr {
+    float: right;
+}
+.position-head .position-content .position-content-r .resume-select .resume {
+    float: right;
+    margin-left: 34px;
+    cursor: pointer;
+    line-height: 28px;
+    color: #555;
+
+}
+.position-head .position-content .position-content-r .resume-select .resume span {
+    color: #333;
+}
+.position-head .position-content .position-content-r .resume-select .resume span:hover {
+
+    color: #00b38a;
+}
+.position-head .position-content .position-content-r .resume-select .resume span i {
+    display: inline-block;
+    font-size: 28px;
+    vertical-align: -7px;
+}
+.send-CV-btn{
+    display: inline-block;
+    margin-left: 17px;
+    padding: 0 30px;
+    border: 1px solid #00b38a;
+    border-radius: 3px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    background-color: #00b38a;
+    color: #fff;
+    cursor: pointer;
+}
+.position-head .position-content .position-content-r .resume-select {
+    margin: 16px 0 11px;
+}
+.position-head .position-content .position-content-r .resume-select .resume {
+    float: right;
+    margin-left: 34px;
+    cursor: pointer;
+    line-height: 28px;
+    margin-top: 20px;
+}
+.position-head .position-content .position-content-r .tool-icon .report_button, .position-head .position-content .position-content-r .tool-icon .jd_share, .position-head .position-content .position-content-r .tool-icon .jd_rountline_share {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+}
+a {
+    color: #555;
+    background-color: transparent;
+    text-decoration: none;
+}
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    padding-bottom: 118px;
+}
+.content_l {
+    width: 696px;
+    background: url(//www.lgstatic.com/www/static/job-detail/page/index/img/gradient_e624ed8.png) repeat-y;
+    background-position: right;
+    padding-right: 52px;
+    padding-top: 26px;
+}
+.container .content_l {
+    position: relative;
+}
+
+.fl {
+    float: left;
+}
+dl, dt, dd {
+    margin: 0;
+}
+dl {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.job_detail dd.job_bt {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.job_detail dd {
+    padding: 15px 0 10px;
+    color: #333;
+    word-wrap: break-word;
+}
+.job_bt {
+    font-size: 14px;
+    line-height: 22px;
+}
+.job_bt h3.description {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    line-height: 16px;
+    margin-bottom: 22px;
+    margin-top: 5px;
+}
+.job_bt p {
+    margin: 1em 0;
+}
+.content_r {
+    float: left;
+    width: 245px;
+    margin-left: 31px;
+    margin-top: 45px;
+}
+.job_company>dt {
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: -10px;
+}
+.job_company dt a {
+    color: #555;
+}
+.job_company dt div {
+    position: absolute;
+    left: 90px;
+    bottom: 5px;
+    padding: 20px 0;
+}
+.job_company dt h2 {
+    margin-left: 21px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: #555;
+}
+.fl {
+
+    float: left;
+}
+#job_company .icon-glyph-valid {
+    width: 16px;
+    height: 18px;
+    margin-left: 0;
+    background: url(//www.lgstatic.com/www/static/job-detail/modules/job-company/img/approve1_18935f1.png) no-repeat 0 0;
+    color: #fff;
+    vertical-align: bottom;
+}
+.job_company dt h2 i {
+    display: inline-block;
+    margin-left: -4px;
+    color: #00b38a;
+    font-size: 14px;
+}
+.job_company .c_feature li {
+    position: relative;
+    margin: 0 0 16px;
+    color: #737373;
+    line-height: 25px;
+}
+.job_company .c_feature i {
+    display: inline-block;
+    margin-right: 15px;
+}
+.item_container {
+    position: relative;
+    width: 100%;
+    min-height: 20px;
+    padding-top: 40px;
+    margin-top: 20px;
+    border-top: 1px solid #e8e8e8;
+}
+.item_container .item_ltitle {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    height: 28px;
+    padding-right: 16px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+    background-color: #fff;
+}
+.item_content{
+    height: 200px;
+}
+
+#basic_container .item_content>ul>li {
+    height: 15px;
+    line-height: 15px;
+}
+#basic_container .item_content>ul>li .type {
+    background-image: url(//www.lgstatic.com/www/static/company-c/modules/basic-info/img/type_icon_7d5884a.png?__sprite);
+}
+#basic_container .item_content>ul>li>i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+#basic_container .item_content>ul>li>span {
+    position: relative;
+    top: 2px;
+}
+#basic_container .item_content>ul li+li {
+    margin-top: 30px;
+}
+#basic_container .item_content>ul>li {
+    height: 15px;
+    line-height: 15px;
+}
+#basic_container .item_content>ul>li .process {
+    height: 14px;
+    background-image: url(//www.lgstatic.com/www/static/company-c/modules/basic-info/img/process_icon_33c5a37.png?__sprite);
+}
+#basic_container .item_content>ul>li>i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+#basic_container .item_content>ul>li {
+    height: 15px;
+    line-height: 15px;
+}
+#basic_container .item_content>ul>li .number {
+    background-image: url(//www.lgstatic.com/www/static/company-c/modules/basic-info/img/number_icon_13c57a0.png?__sprite);
+}
+#basic_container .item_content>ul>li>i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+#basic_container .item_content>ul>li .address {
+    width: 14px;
+    height: 17px;
+    background-image: url(//www.lgstatic.com/www/static/company-c/modules/basic-info/img/address_icon_5818d69.png?__sprite);
+}
+#basic_container .item_content>ul>li>i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    vertical-align: middle;
+}

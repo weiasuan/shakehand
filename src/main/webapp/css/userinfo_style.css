@@ -1,0 +1,421 @@
+body{
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*页面主体DIV,包裹所有页面DIV*/
+#main{
+    width: 60%;
+    height: 550px;
+    margin-left: 20%;
+    margin-top:50px;
+
+}
+/*侧边栏*/
+    #aside{
+        width: 25%;
+        border-right: 1px solid #e3ebe9;
+        text-align: right;
+        line-height: 55px;
+        float: left;
+    }
+    #aside ul li{
+        display: block;
+        height: 30px;
+        color: #0056B3;
+        margin-bottom: 40px;
+        line-height: 30px;
+    }
+#aside ul li a{
+    text-decoration: none;
+}
+
+/*侧边栏右侧DIV的容器*/
+    #content{
+        width: 75%;
+        height: 550px;
+        float: left;
+
+    }
+/*侧边栏1右侧DIV*/
+    #matter1{
+        width: 80%;
+        height: 550px;
+        margin-left: 10%;
+
+    }
+/*用户信息展示DIV*/
+    #hadinfo{
+        width: 100%;
+        height: 550px;
+    }
+    .touxiang{
+        width: 25%;
+        margin-left: 37.5%;
+        height: 150px;
+        text-align: center;
+    }
+    .touxiang img{
+        border-radius: 50%;
+    }
+    #bianji{
+        background: url("../images_userinfo/bianji.png") no-repeat;
+        padding-left: 20px;
+        line-height: 18px;
+        color: #00b38a;
+        font-size: 16px;
+    }
+    #name{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 20px;
+        color: #333;
+    }
+    #veiw-position{
+        text-align: center;
+        color: #555;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    #veiw-introduce{
+        color: #555;
+        font-size: 14px;
+        margin-top: 20px;
+        text-align: center;
+    }
+/*用户信息编辑DIV*/
+    #userform{
+        width: 100%;
+        height: 550px;
+        display: none;
+    }
+/*包裹input标签的DIV设置*/
+    .inputbox{
+        width: 400px;
+        height: 44px;
+        text-align: center;
+        margin-left: 70px;
+        border-bottom: 1px solid #ededed;
+    }
+/*类名为Edit的input的设置*/
+    .Edit{
+        margin-bottom: 2px;
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin-top: 0;
+        padding: 12px 0;
+        font-size: 14px;
+        color: #555;
+        border:none;
+        outline: none;
+    }
+/*单选框设置*/
+    .sex-radio{
+        margin-top: 10px;
+        width: 70px;
+        height: 20px;
+    }
+/*包裹提交按钮的DIV的设置*/
+    .submitbox{
+        margin-top: 10px;
+        width: 400px;
+        height: 44px;
+        text-align: center;
+        margin-left: 70px;
+        border: none;
+    }
+/*提交按钮的设置*/
+    .submit{
+        border-radius: 5px;
+        background-color: #00b38a;
+        color: #fff;
+    }
+/*侧边栏2右侧DIV*/
+#matter2{
+    width: 80%;
+    height: 550px;
+    margin-left: 10%;
+    display: none;
+}
+/*简历展示外面的DIV*/
+#jianliShow{
+    width: 80%;
+    height: 550px;
+    margin-left: 10%;
+    text-align: center;
+}
+/*简历背景*/
+#jianliBG{
+    width: 100%;
+    height: 15%;
+    background: url("../images_userinfo/jianliBG.png") repeat-x;
+}
+/*简历页头像*/
+#jianliPic{
+    margin-bottom: -30px;
+    border-radius: 50%;
+}
+/*简历基本信息*/
+#jibenxinxi{
+    width: 100%;
+    margin-top: 18px;
+    height: 28%;
+
+}
+/*简历span字体设置*/
+.jianliSpan{
+    margin-left: 10px;
+    font-size: 13px;
+}
+/*简历P字体设置*/
+.jianliP{
+    font-size: 11px;
+
+}
+#zhuanyejineng{
+    width: 100%;
+    height: 15%;
+    margin-top: 18px;
+}
+#xiangmujingli{
+    width: 100%;
+    height: 18%;
+}
+#peixunjingli{
+    width: 100%;
+    height: 18%;
+}
+/*侧边栏3右侧DIV*/
+    #matter3{
+        width: 80%;
+        height: 550px;
+        margin-left: 10%;
+        display: none;
+    }
+/*包裹简历form的DIV*/
+    #jianliContent{
+        width: 80%;
+        height: 550px;
+        margin-left: 10%;
+        text-align: left;
+    }
+    .jianliInput{
+        width: 400px;
+        height: 44px;
+        border-bottom: 1px solid #ededed;
+    }
+    .jianliEdit{
+        margin-bottom: 2px;
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin-top: 0;
+        padding: 12px 0;
+        font-size: 14px;
+        color: #555;
+        border:none;
+        outline: none;
+    }
+    .jianliTextarea{
+        width: 400px;
+        height: 100px;
+        border-bottom: 1px solid #ededed;
+    }
+
+/*创建简历的第一页*/
+    #jianli1{
+        width: 100%;
+        height: 550px;
+        text-align: center;
+    }
+/*下一页按钮*/
+#jianliBTN1{
+    width: 250px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: #00b38a;
+    color: white;
+    margin-top: 10px;
+}
+/*上一页按钮*/
+#jianliBTN2{
+    width: 80px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: #00b38a;
+    color: white;
+    margin-top: 10px;
+    float: left;
+}
+/*提交按钮*/
+#jianliBTN3{
+    width: 150px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: #00b38a;
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+/*创建简历的第二页*/
+    #jianli2{
+    width: 100%;
+    height: 550px;
+    display: none;
+    }
+/*创建简历的第三页*/
+    #jianli3{
+    width: 100%;
+    height: 550px;
+    background-color:yellowgreen;
+    display: none;
+    }
+
+/*侧边栏4右侧DIV*/
+#matter4{
+    width: 80%;
+    height: 550px;
+    margin-left: 10%;
+    display: none;
+}
+#toudixiang{
+    background-color: #FAFAFA;
+    width: auto;
+    height: 500px;
+}
+#toudixiangHead{
+    width: 100%;
+    height: 35px;
+    border-bottom: 2px solid #F2F2F2;
+}
+#toudixiangHead p{
+    padding-left: 15px;
+    line-height: 40px;
+    font-size: 20px;
+    color: dimgray;
+
+}
+#toudixiangNav{
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    float: left;
+    background-color: #F2F2F2;
+}
+#all{
+    width: 15%;
+    height: 45px;
+    border-right: 1px solid #FAFAFA;
+    float: left;
+    text-align: center;
+}
+#success{
+    width: 15%;
+    height: 45px;
+    border-right: 1px solid #FAFAFA;
+    float: left;
+    text-align: center;
+}
+#chakan{
+    width: 15%;
+    height: 45px;
+    border-right: 1px solid #FAFAFA;
+    float: left;
+    text-align: center;
+}
+#goutong{
+    width: 15%;
+    height: 45px;
+    border-right: 1px solid #FAFAFA;
+    float: left;
+    text-align: center;
+}
+#yaoqing{
+    width: 15%;
+    height: 45px;
+    border-right: 1px solid #FAFAFA;
+    float: left;
+    text-align: center;
+}
+#fail{
+    width: 25%;
+    height: 45px;
+    float: left;
+    text-align: center;
+}
+#toudixiangNav a{
+    text-decoration: none;
+    line-height: 45px;
+    color: gray;
+}
+#toudixiangContent{
+    width: 100%;
+    height: 385px;
+    margin-top: 20px;
+}
+#max1{
+    width: 100%;
+    height: 385px;
+}
+#max2{
+    width: 100%;
+    height: 385px;
+    display: none;
+}
+#max3{
+    width: 100%;
+    height: 385px;
+    display: none;
+}
+#max4{
+    width: 100%;
+    height: 385px;
+    display: none;
+}
+#max5{
+    width: 100%;
+    height: 385px;
+    display: none;
+}
+#max6{
+    width: 100%;
+    height: 385px;
+    display: none;
+}
+.showTable{
+    width: auto;
+    height: 300px;
+
+}
+.showTable td{
+    padding-left: 10px;
+}
+.mytr{
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ededed;
+}
+.page{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+.btn1{
+    background-color: #00b38a;
+    border-radius: 5px;
+    color: white;
+    border: 0px;
+}
+/*侧边栏6右侧DIV*/
+#matter5{
+    width: 80%;
+    height: 550px;
+    margin-left: 10%;
+    display: none;
+
+}

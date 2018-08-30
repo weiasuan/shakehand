@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公司搜索</title>
+    <!--CSS-->
+    <!--基础+头部+尾部-->
+    <link href="css/base.css" type="text/css" rel="stylesheet">
+    <link href="css/header.css" type="text/css" rel="stylesheet">
+    <link href="css/footer.css" type="text/css" rel="stylesheet">
+    <!--搜索栏-->
+    <link href="css/search_style.css" type="text/css" rel="stylesheet">
+    <!--自己写的css-->
+    <link href="css/company_style.css" type="text/css" rel="stylesheet">
+    <!--JS-->
+    <script src="js/jquery-3.3.1.js" type="application/javascript"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="layer/layer.js"></script>
+    <!--自己写JS-->
+    <script src="js/company_search_js.js"></script>
+
+</head>
+<body>
+<div id="all">
+    <!--头部-->
+    <div id="sh_header">
+        <!--头部黑色导航栏-->
+        <div id="sh_tbar">
+            <div class="sh_tbar_1">
+                <a>握手APP</a>
+                <a href="company_manage.html">进入企业版</a>
+            </div>
+            <ul class="sh_tbar_r">
+                <li class="msg_dropdown"><a>消息</a></li>
+                <li><a>我的简历</a></li>
+                <li><a>投递箱</a></li>
+                <li><a>收藏夹</a></li>
+                <li class="user_dropdown">
+                    <a href="userinfo.html">用户</a>
+                    <em></em>
+                    <ul>
+                        <li><a>我的订阅</a></li>
+                        <li><a>职位邀请</a></li>
+                        <li><a>账号设置</a></li>
+                        <li><a>去企业版</a></li>
+                        <li><a>退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--头部白色导航栏-->
+        <div id="sh_tnav">
+            <div class="inner">
+                <div class="sh_tnav_1">
+                    <a><h1>握手网</h1></a>
+                </div>
+                <ul class="sh_tnav_wrap">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a id="company" href="company_search.html">公司</a></li>
+                    <li><a href="position_search.html">职位</a></li>
+                    <li><a href="school.html">校园</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!--搜索栏-->
+    <div id="search_wrapper">
+        <div id="search_box">
+            <form>
+                <input type="text" id="search_input" placeholder="搜索职位、公司或地点">
+                <input type="submit" id="search_button" value="搜索">
+            </form>
+        </div>
+        <div id="hot_search">
+            <dl>
+                <dt>热门搜索:</dt>
+                <dd><a href="">超级雇主招聘节</a></dd>
+                <dd><a href="">2018校园秋招</a></dd>
+                <dd><a href="">成都高薪抢人</a></dd>
+                <dd><a href="">销售</a></dd>
+                <dd><a href="">高级测试工程师</a></dd>
+                <dd><a href="">产品运营</a></dd>
+                <dd><a href="">PHP</a></dd>
+                <dd><a href="">销售经理</a></dd>
+                <dd><a href="">产品经理</a></dd>
+            </dl>
+        </div>
+    </div>
+    <!--主体-->
+    <div id="content-container">
+        <div id="company_list_container">
+            <div id="positionHead">
+                <!--筛选-->
+                <ul id="filterBox">
+                    <div class="details">
+                        <div class="has-more">
+                            <li>
+                                <span class="title">公司地点:</span>
+                                <div class="city-wrapper clear-fix">
+                                    <a href="javascript:;" data-id="1">全国</a>
+                                    <a href="javascript:;" data-id="2">北京</a>
+                                    <a href="javascript:;" data-id="3">上海</a>
+                                    <a href="javascript:;" data-id="4">深圳</a>
+                                    <a href="javascript:;" data-id="5">广州</a>
+                                    <a href="javascript:;" data-id="6">杭州</a>
+                                    <a href="javascript:;" data-id="7">成都</a>
+                                    <a href="javascript:;" data-id="8">南京</a>
+                                    <a href="javascript:;" data-id="9">武汉</a>
+                                    <a href="javascript:;" data-id="10">西安</a>
+                                    <a href="javascript:;" data-id="11">厦门</a>
+                                    <a href="javascript:;" data-id="12">长沙</a>
+                                    <a href="javascript:;" data-id="13">苏州</a>
+                                    <a href="javascript:;" data-id="14">天津</a>
+                                    <a class="btn-more">
+                                        更多<i></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <div class="more-positions"></div>
+                        </div>
+                        <li class="multi-chosen">
+                            <span class="title">融资阶段:</span>
+                            <a href="javascript:;" data-id="1">不限</a>
+                            <a href="javascript:;" data-id="1">未融资</a>
+                            <a href="javascript:;" data-id="1">天使轮</a>
+                            <a href="javascript:;" data-id="1">A轮</a>
+                            <a href="javascript:;" data-id="1">B轮</a>
+                            <a href="javascript:;" data-id="1">C轮</a>
+                            <a href="javascript:;" data-id="1">D轮及以上</a>
+                            <a href="javascript:;" data-id="1">上市公司</a>
+                            <a href="javascript:;" data-id="1">不需要融资</a>
+                        </li>
+                        <li class="multi-chosen">
+                            <span class="title">公司规模:</span>
+                            <a href="javascript:;" data-id="1">不限</a>
+                            <a href="javascript:;" data-id="1">少于15人</a>
+                            <a href="javascript:;" data-id="1">15-50人</a>
+                            <a href="javascript:;" data-id="1">50-150人</a>
+                            <a href="javascript:;" data-id="1">150-500人</a>
+                            <a href="javascript:;" data-id="1">500-2000人</a>
+                            <a href="javascript:;" data-id="1">2000人以上</a>
+                        </li>
+                        <div class="has-more">
+                            <li>
+                                <span class="title">行业领域:</span>
+                                <div class="city-wrapper">
+                                    <a href="javascript:;" data-id="1">不限</a>
+                                    <a href="javascript:;" data-id="1">移动互联网</a>
+                                    <a href="javascript:;" data-id="1">电子商务</a>
+                                    <a href="javascript:;" data-id="1">金融</a>
+                                    <a href="javascript:;" data-id="1">企业服务</a>
+                                    <a href="javascript:;" data-id="1">教育</a>
+                                    <a href="javascript:;" data-id="1">文化娱乐</a>
+                                    <a href="javascript:;" data-id="1">游戏</a>
+                                    <a href="javascript:;" data-id="1">O2O</a>
+                                    <a href="javascript:;" data-id="1">硬件</a>
+                                    <a class="btn-more">
+                                        更多<i></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <div class="more-positions"></div>
+                        </div>
+                    </div>
+                </ul>
+                <!--排序-->
+                <ul class="sub_filter">
+                    <li class="wrapper">
+                        <div class="item-order">
+                            <span class="title">排序方式:</span>
+                            <a href="javascript:;" data-id="1">默认排序</a>
+                            <a href="javascript:;" data-id="1">职位数量↓</a>
+                            <a href="javascript:;" data-id="1">面试评价数↓</a>
+                            <a href="javascript:;" data-id="1">简历处理率↓</a>
+                        </div>
+                        <div class="interval_assess"></div>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="ad-company">
+                <ul class="ad-company-list">
+                    <!--通过条件搜索信息 可以使用 for each-->
+                    <li class="company-item">
+                        <div class="company-top">
+                            <p>
+                                <a>
+                                    <img src="img/small_mid_logo1.png">
+                                </a>
+                            </p>
+                            <p>
+                                <a>折800网</a>
+                            </p>
+                            <p>
+                                <span>移动互联网,电子商务</span>
+                                <span>/</span>
+                                <span>C轮</span>
+                            </p>
+                            <p>指引全国超过上亿用户在网购以及本地吃喝玩乐等消费领域，实现着“花最少的钱过更好的日子”的消费体验！</p>
+                        </div>
+                        <div class="company-bottom">
+                            <a>
+                                <p><span>28</span></p>
+                                <p>面试评价</p>
+                            </a>
+                            <a>
+                                <p><span>4</span></p>
+                                <p>在招职位</p>
+                            </a>
+                            <a>
+                                <p><span>100%</span></p>
+                                <p>简历处理率</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="item-con-pager">
+                    <div class="pager-container">
+                        <span>上一页</span>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        ...
+                        <span>20</span>
+                        <span>下一页</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--回到顶部图标-->
+    <a class="back_top" title="回到顶部" href="#sh_header"></a>
+    <!--底部-->
+    <div id="footer">
+        <div class="wrapper">
+            <div class="inner_wrapper">
+                <div class="footer_module_column">
+                    <a class="footer_app">
+                        <i class="footer_app_icon"></i>
+                        下载握手APP
+                        <img src="">
+                    </a>
+                    <a class="footer_mina">
+                        <i class="footer_mina_item"></i>
+                        微信小程序
+                        <img>
+                    </a>
+                    <div class="footer_module_item">
+                        <a class="footer_wechat">
+                            <i class="footer_wechat_icon"></i>
+                            握手微信
+                            <img>
+                        </a>
+                        <a class="footer_webo">
+                            <i class="footer_webo_icon"></i>
+                            拉钩微博
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_module_right">
+                    <div class="footer_module_business">
+                        <p>企业服务</p>
+                        <a>招聘解决方案</a>
+                        <a>公司搜索</a>
+                        <a>握手APP</a>
+                    </div>
+                    <div class="footer_module_business">
+                        <p>用户帮助</p>
+                        <a>帮助中心</a>
+                        <a>用户服务协议</a>
+                        <a>在线提问</a>
+                    </div>
+                    <div class="footer_module_business">
+                        <p>联系方式</p>
+                        <span>
+                            服务热线:<em>4000 1234 56 (9:00-18:00)</em>
+                        </span>
+                        <a>
+                            企业服务邮箱:
+                            <em>qwB@shakehand.com</em>
+                        </a>
+                        <a>联系我们</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyright_main">
+                    <div class="copyright_main_left">
+                        <span class="copyright_title">
+                            <em>©</em>
+                            2018握手网
+                        </span>
+                        <a>京ICP备12345678号-2</a>
+                        <a class="footer_gongan">
+                            <i class="footer_gongan_i"></i>
+                            京公网安备 11010802024043
+                        </a>
+                        <div class="footer_jubao">
+                            <i class="jubao"></i>
+                            <p>
+                                <span>违法和不良信息举报</span>
+                                <strong>4006 2828 35</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <i class="footer_icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShakeHand后台管理系统</title>
+    <!--自己写的css-->
+    <link href="css/manage_style.css" rel="stylesheet">
+
+    <!--JS-->
+    <script src="js/jquery-3.3.1.js" type="application/javascript"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="layer/layer.js"></script>
+    <!--自己写JS-->
+    <script src="js/manage_js.js" type="application/javascript"></script>
+    <!--<script>aa();</script>-->
+</head>
+<body>
+<div id="body">
+    <!--头部标题部分-->
+    <div id="head">
+        <div class="head_right"><b>ShakeHand</b></div>
+        <p class="title">握手招聘网后台管理系统</p>
+    </div>
+    <!--内容部分-->
+    <div id="content">
+        <div id="content_left">
+            <ul id="ul_company">
+                <li class="left_list" id="li_com">公司管理</li>
+                <li id="li1">添加公司信息</li>
+                <li id="li2">删除公司信息</li>
+                <li id="li3">修改公司信息</li>
+                <li id="li4">查询公司信息</li>
+            </ul>
+            <ul id="ul_user">
+                <li class="left_list" id="li_user"> 用户管理</li>
+                <li id="li6">添加用户信息</li>
+                <li id="li7">删除用户信息</li>
+                <li id="li8">修改用户信息</li>
+                <li id="li9">查询用户信息</li>
+            </ul>
+            <ul id="ul_new">
+                <li class="left_list" id="li_new">公告管理</li>
+                <li id="li10">添加公告信息</li>
+                <li id="li11">删除公告信息</li>
+                <li id="li12">修改公告信息</li>
+                <li id="li13">查询公告信息</li>
+            </ul>
+        </div>
+        <div id="content_right">
+            <!--有伴部分的头部-->
+            <div id="content_right_top">
+                <ul>
+                    <li id="index">首页</li>
+                    <li class="space">/</li>
+                </ul>
+            </div>
+            <div id="content_right_cen">
+                <!--公司页面-->
+                <div id="company">
+                    <ul class="li_head">
+                        <li>公司ID</li>
+                        <li>公司账号</li>
+                        <li>公司全称</li>
+                        <li>注册姓名</li>
+                        <li>登录密码</li>
+                        <li>收件邮箱</li>
+                        <li>公司电话</li>
+                        <li>公司地址</li>
+                        <li>公司简介</li>
+                        <li>公司产品</li>
+                        <li>操作</li>
+                        <li>操作</li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>蓝桥教育</li>
+                        <li>张伟东</li>
+                        <li>123456</li>
+                        <li>lanqiao@org.com</li>
+                        <li>135********</li>
+                        <li>天津市</li>
+                        <li>蓝桥教育网</li>
+                        <li>蓝桥杯大赛</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>蓝桥教育</li>
+                        <li>张伟东</li>
+                        <li>123456</li>
+                        <li>lanqiao@org.com</li>
+                        <li>135********</li>
+                        <li>天津市</li>
+                        <li>蓝桥教育网</li>
+                        <li>蓝桥杯大赛</li>
+                        <li><button  class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>蓝桥教育</li>
+                        <li>张伟东</li>
+                        <li>123456</li>
+                        <li>lanqiao@org.com</li>
+                        <li>135********</li>
+                        <li>天津市</li>
+                        <li>蓝桥教育网</li>
+                        <li>蓝桥杯大赛</li>
+                        <li><button  class="update">修改</button></li>
+                        <li><button  class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>蓝桥教育</li>
+                        <li>张伟东</li>
+                        <li>123456</li>
+                        <li>lanqiao@org.com</li>
+                        <li>135********</li>
+                        <li>天津市</li>
+                        <li>蓝桥教育网</li>
+                        <li>蓝桥杯大赛</li>
+                        <li><button  class="update">修改</button></li>
+                        <li><button  class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>蓝桥教育</li>
+                        <li>张伟东</li>
+                        <li>123456</li>
+                        <li>lanqiao@org.com</li>
+                        <li>135********</li>
+                        <li>天津市</li>
+                        <li>蓝桥教育网</li>
+                        <li>蓝桥杯大赛</li>
+                        <li><button  class="update">修改</button></li>
+                        <li><button  class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>蓝桥教育</li>
+                        <li>张伟东</li>
+                        <li>123456</li>
+                        <li>lanqiao@org.com</li>
+                        <li>135********</li>
+                        <li>天津市</li>
+                        <li>蓝桥教育网</li>
+                        <li>蓝桥杯大赛</li>
+                        <li><button  class="update">修改</button></li>
+                        <li><button  class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>蓝桥教育</li>
+                        <li>张伟东</li>
+                        <li>123456</li>
+                        <li>lanqiao@org.com</li>
+                        <li>135********</li>
+                        <li>天津市</li>
+                        <li>蓝桥教育网</li>
+                        <li>蓝桥杯大赛</li>
+                        <li><button  class="update">修改</button></li>
+                        <li><button  class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>蓝桥教育</li>
+                        <li>张伟东</li>
+                        <li>123456</li>
+                        <li>lanqiao@org.com</li>
+                        <li>135********</li>
+                        <li>天津市</li>
+                        <li>蓝桥教育网</li>
+                        <li>蓝桥杯大赛</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button  class="delete">删除</button></li>
+                    </ul>
+                </div>
+                <!--用户页面-->
+                <div id="user">
+                    <ul class="li_head">
+                        <li>用户ID</li>
+                        <li>用户名</li>
+                        <li>用户密码</li>
+                        <li>用户性别</li>
+                        <li>用户手机</li>
+                        <li>用户邮箱</li>
+                        <li>个人介绍</li>
+                        <li>用户头像地址</li>
+                        <li>用户职位</li>
+                        <li>操作</li>
+                        <li>操作</li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>张三</li>
+                        <li>123456</li>
+                        <li>男</li>
+                        <li>135********</li>
+                        <li>lanqiao@org.com</li>
+                        <li>啦啦啦啦</li>
+                        <li>images</li>
+                        <li>java工程师</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>张三</li>
+                        <li>123456</li>
+                        <li>男</li>
+                        <li>135********</li>
+                        <li>lanqiao@org.com</li>
+                        <li>啦啦啦啦</li>
+                        <li>images</li>
+                        <li>java工程师</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>张三</li>
+                        <li>123456</li>
+                        <li>男</li>
+                        <li>135********</li>
+                        <li>lanqiao@org.com</li>
+                        <li>啦啦啦啦</li>
+                        <li>images</li>
+                        <li>java工程师</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>张三</li>
+                        <li>123456</li>
+                        <li>男</li>
+                        <li>135********</li>
+                        <li>lanqiao@org.com</li>
+                        <li>啦啦啦啦</li>
+                        <li>images</li>
+                        <li>java工程师</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>张三</li>
+                        <li>123456</li>
+                        <li>男</li>
+                        <li>135********</li>
+                        <li>lanqiao@org.com</li>
+                        <li>啦啦啦啦</li>
+                        <li>images</li>
+                        <li>java工程师</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>张三</li>
+                        <li>123456</li>
+                        <li>男</li>
+                        <li>135********</li>
+                        <li>lanqiao@org.com</li>
+                        <li>啦啦啦啦</li>
+                        <li>images</li>
+                        <li>java工程师</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>张三</li>
+                        <li>123456</li>
+                        <li>男</li>
+                        <li>135********</li>
+                        <li>lanqiao@org.com</li>
+                        <li>啦啦啦啦</li>
+                        <li>images</li>
+                        <li>java工程师</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>张三</li>
+                        <li>123456</li>
+                        <li>男</li>
+                        <li>135********</li>
+                        <li>lanqiao@org.com</li>
+                        <li>啦啦啦啦</li>
+                        <li>images</li>
+                        <li>java工程师</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>张三</li>
+                        <li>123456</li>
+                        <li>男</li>
+                        <li>135********</li>
+                        <li>lanqiao@org.com</li>
+                        <li>啦啦啦啦</li>
+                        <li>images</li>
+                        <li>java工程师</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>张三</li>
+                        <li>123456</li>
+                        <li>男</li>
+                        <li>135********</li>
+                        <li>lanqiao@org.com</li>
+                        <li>啦啦啦啦</li>
+                        <li>images</li>
+                        <li>java工程师</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+              </div>
+                <!--公告页面-->
+                <div id="new_info">
+                    <ul class="li_head">
+                        <li>公告ID</li>
+                        <li>管理员ID</li>
+                        <li>公告标题</li>
+                        <li>发布时间</li>
+                        <li>公告内容</li>
+                        <li>操作</li>
+                        <li>操作</li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>系统维护</li>
+                        <li>2018-8-28</li>
+                        <li>系统维护期间</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>系统维护</li>
+                        <li>2018-8-28</li>
+                        <li>系统维护期间</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>系统维护</li>
+                        <li>2018-8-28</li>
+                        <li>系统维护期间</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>系统维护</li>
+                        <li>2018-8-28</li>
+                        <li>系统维护期间</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>系统维护</li>
+                        <li>2018-8-28</li>
+                        <li>系统维护期间</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>系统维护</li>
+                        <li>2018-8-28</li>
+                        <li>系统维护期间</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>系统维护</li>
+                        <li>2018-8-28</li>
+                        <li>系统维护期间</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>系统维护</li>
+                        <li>2018-8-28</li>
+                        <li>系统维护期间</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body1">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>系统维护</li>
+                        <li>2018-8-28</li>
+                        <li>系统维护期间</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                    <ul class="li_body2">
+                        <li>001</li>
+                        <li>2018001</li>
+                        <li>系统维护</li>
+                        <li>2018-8-28</li>
+                        <li>系统维护期间</li>
+                        <li><button class="update">修改</button></li>
+                        <li><button class="delete">删除</button></li>
+                    </ul>
+                </div>
+                <div id="content_right_bu">
+                    <button class="add">添加</button>
+                    <div id="fenye">
+                    <button>上一页</button>
+                    <button>下一页</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
