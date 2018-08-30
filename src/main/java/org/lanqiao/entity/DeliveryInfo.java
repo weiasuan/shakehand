@@ -1,7 +1,6 @@
 package org.lanqiao.entity;
 
 import java.util.Date;
-
 public class DeliveryInfo {
     private int DELIVERY_ID;
     private int USER_ID;

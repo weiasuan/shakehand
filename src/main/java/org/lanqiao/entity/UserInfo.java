@@ -10,6 +10,7 @@ public class UserInfo {
     private String USER_POSITION;
     private String USER_INTRODUCT;
     private String USER_PICADDRESS;
+    private String USER_LOCK;
 
 
     public UserInfo(String userName, String userSex, String userEmail, String userTel, String userIntroduct, String userPosition) {
@@ -106,5 +107,13 @@ public class UserInfo {
 
     public void setUSER_PICADDRESS(String USER_PICADDRESS) {
         this.USER_PICADDRESS = USER_PICADDRESS;
+    }
+
+    public String getUSER_LOCK() {
+        return USER_LOCK;
+    }
+
+    public void setUSER_LOCK(String USER_LOCK) {
+        this.USER_LOCK = USER_LOCK;
     }
 }

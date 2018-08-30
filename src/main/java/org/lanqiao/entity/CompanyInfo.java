@@ -21,12 +21,13 @@ public class CompanyInfo {
     private String COMPANY_STATUS;
 
 
-    public CompanyInfo(String COMPANY_NAME, String COMPANY_USER, String COMPANY_EMAIL, String COMPANY_TEL, String COMPANY_ADDRESS) {
+    public CompanyInfo(){
+    }
+
+    public CompanyInfo(String COMPANY_NAME, String COMPANY_PROFILE, String COMPANY_LABEL) {
         this.COMPANY_NAME = COMPANY_NAME;
-        this.COMPANY_USER = COMPANY_USER;
-        this.COMPANY_EMAIL = COMPANY_EMAIL;
-        this.COMPANY_TEL = COMPANY_TEL;
-        this.COMPANY_ADDRESS = COMPANY_ADDRESS;
+        this.COMPANY_PROFILE = COMPANY_PROFILE;
+        this.COMPANY_LABEL = COMPANY_LABEL;
     }
 
     public int getCOMPANY_ID() {
