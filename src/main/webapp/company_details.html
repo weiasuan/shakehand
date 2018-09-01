@@ -15,8 +15,11 @@
     <script src="js/jquery-3.3.1.js" type="application/javascript"></script>
     <script src="js/jquery.validate.js"></script>
     <script src="layer/layer.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>
     <!--自己写JS-->
     <script src="js/company_details_js.js"></script>
+
+
 </head>
 <body>
 
@@ -65,25 +68,24 @@
 </div>
 
 <!--主体-->
-<div class="container">
+<div class="container1">
     <div class="top_info">
-        <div class="top_info_wrap">
-            <img src="//www.lgstatic.com/thumbnail_300x300/i/image/M00/17/19/CgqKkVbw82CAAmBDAABb58-N6IM299.png"
-                 alt="航班管家Logo" width="164" heihgt="164">
+        <div class="top_info_wrap" id="showCOMPANY_LOGO">
+            <!--显示公司LOGO-->
+
             <div class="company_info">
                 <div class="company_main">
-                    <h1 class="hovertips">
-                        <a href="http://www.huoli.com">
-                            航班管家
-                        </a>
+                    <h1 class="hovertips" id="showCOMPANY_NAME">
+                        <!--显示公司名称-->
                     </h1>
                     <a class="identification tipsys" title="已完成资质认证，并完善了更优质的公司主页信息">
                         <i></i>
                         <span>握手认证</span>
                     </a>
-                    <div data-name="" class="company_word">
-                        为用户体验而生
-                    </div>
+                    <div data-name="" class="company_word" id="showCOMPANY_PROFILE">
+                        <!--显示公司描述-->
+
+                         </div>
                 </div>
                 <div class="company_data">
                     <ul>
@@ -100,7 +102,7 @@
                             <strong>
                                 100%
                             </strong>
-                            <span title="该公司7日内处理简历数占收取简历数比例">
+                            <span  title="该公司7日内处理简历数占收取简历数比例">
                             <span>简历及时处理率</span><span class="tip"></span>
                         </span>
                         </li>
@@ -132,6 +134,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div id="company_navs" class="company_navs">
         <div class="company_navs_wrap">
@@ -190,11 +193,9 @@
                     </div>
                     <div class="item_container" id="company_intro">
                         <div class="item_ltitle">公司介绍</div>
-                        <div class="item_content">
+                        <div class="item_content" >
                             <div class="company_intro_text" style="display: block;">
-                            <span class="company_content">
-                               <p>深圳市活力天汇科技股份有限公司是目前国内领先的移动互联网创新企业，专注手机客户端软件的开发与运营，致力于为移动互联网用户的联系交流以及各种实用需求提供最佳的解决方案，产品线包括航班管家、高铁管家等，涉及商旅信息、移动社区、LBS、移动支付等无线互联网领域。<br>
-                                   <br> 公司的核心骨干团队均为移动互联网或电信行业资深从业人员，具有强大的产品研发和市场开拓能力，自创建以来，一直在产品和功能的设计上大胆尝试，以创新的手段满足移动互联网用户的各种需求。我们首次提出场景服务</p>
+                            <span class="company_content" id="showCOMPANY_DETAILPROFILE">
                             </span>
                             </div>
                         </div>
@@ -210,116 +211,129 @@
                                     <span class="count">（&nbsp;来自&nbsp;92&nbsp;份评价&nbsp;）</span>
                                 </div>
                             </div>
-                            <div class="list-container">
-                                <ul class="list-content">
-                                    <li class="review-area ">
-                                        <div class="review-right">
-                                            <div class="review-stars ">
-                                                <div class="review-avater">
-                                                    <img class="lazy_img" alt="评价人头像" width="50" height="50"
-                                                         rel="nofollow"
-                                                         src="/company_details.html/www.lgstatic.com/www/static/company-c/modules/reviews-latest/img/avatar_default_25a41f6.png">
-                                                </div>
-                                                <a class="review-name" title="赵*潇">赵*潇</a>
-                                                <span class="title1">综合评分&nbsp;&nbsp;:&nbsp;&nbsp;</span>
-                                                <span class="score">4.4</span>
-                                                <span class="title1">面试职位&nbsp;&nbsp;:&nbsp;&nbsp;</span>
-                                                <span class="title">机票运营专员</span>
-                                                <span class="review-date">2018-08-24</span>
-                                            </div>
-                                            <div class="review-content">
-                                                <div>
-                                                    <span class="review-type">[面试评价]</span>
-                                                    <div class="interview-process">感觉蛮合适的，聊的也还行，期待进一步吧</div>
-                                                </div>
-                                            </div>
-                                            <div class="review-reply" data-index="0">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="review-area ">
-                                        <div class="review-right">
-                                            <div class="review-stars ">
-                                                <div class="review-avater">
-                                                    <img class="lazy_img" alt="评价人头像" width="50" height="50"
-                                                         rel="nofollow"
-                                                         src="/company_details.html/www.lgstatic.com/www/static/company-c/modules/reviews-latest/img/avatar_default_25a41f6.png">
-                                                </div>
-                                                <a class="review-name" title="赵*潇">赵*潇</a>
-                                                <span class="title1">综合评分&nbsp;&nbsp;:&nbsp;&nbsp;</span>
-                                                <span class="score">4.4</span>
-                                                <span class="title1">面试职位&nbsp;&nbsp;:&nbsp;&nbsp;</span>
-                                                <span class="title">机票运营专员</span>
-                                                <span class="review-date">2018-08-24</span>
-                                            </div>
-                                            <div class="review-content">
-                                                <div>
-                                                    <span class="review-type">[面试评价]</span>
-                                                    <div class="interview-process">感觉蛮合适的，聊的也还行，期待进一步吧</div>
-                                                </div>
-                                            </div>
-                                            <div class="review-reply" data-index="0">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="review-area ">
+                            <div id="show">
+                                <script>
+                                    function load(){
+                                        $.ajax({
+                                            url: "/showMsg",
+                                            type: "post",
+                                            data:{"pageNum":pageNum},
+                                            dataType: "json",
+                                            success: function (list) {
+                                                for (var i = list.length-2; i >= 0; i--) {
+                                                    var $node = $('<div id="list-container">' +'<div class="review-right">'+'<div class="review-stars ">'+'<div class="review-avater">'+
+                                                        '<img class="lazy_img" alt="评价人头像" width="50" height="50" rel="nofollow" src="//www.lgstatic.com/www/static/company-c/modules/reviews-latest/img/avatar_default_25a41f6.png">'+
+                                                        ' </div>'+'<div style="margin-top: 10px;margin-left: 10px">'+'<div class="review-name" style="width: 100px;position: absolute">'+list[i].COMMENT_ID+'</div>'+
+                                                        ' <span style="margin-left: 120px">综合评分&nbsp;&nbsp;:&nbsp;&nbsp;</span>'+'<span class="score">'+list[i].COMMENT_SCORE+'分</span>\n' +
+                                                        '<span style="margin-left: 20px">面试职位&nbsp;&nbsp;:&nbsp;&nbsp;</span>'+
+                                                        '<span class="title">机票运营专员</span>\n' +
+                                                        '<span style="margin-left: 15px">发布时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>\n' +
+                                                        '<span class="review-date">'+list[i].COMMENT_TIME+'</span>\n' +'<span style="float: right;margin-right: 10px">'+list[i].COMMENT_ID+'楼</span>'+
+                                                        '</div>'+' <div class="review-content">\n' +
+                                                        '\n' +
+                                                        '<span class="review-type">[面试评价]</span>\n' +
+                                                        '<span class="interview-process">'+list[i].COMMENT_INFO+'</span>\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        '</div>'+' </div>\n' +
+                                                        '</div>\n' +
+                                                        '</div>');
+                                                    $("#show").prepend($node);
+                                                }
+                                                reCount = list[list.length-1];
+                                            }
+                                        });
+                                    };
 
-                                        <div class="review-right">
-                                            <div class="review-stars ">
-                                                <div class="review-avater">
-                                                    <img class="lazy_img" alt="评价人头像" width="50" height="50"
-                                                         rel="nofollow"
-                                                         src="/company_details.html/www.lgstatic.com/www/static/company-c/modules/reviews-latest/img/avatar_default_25a41f6.png">
-                                                </div>
-                                                <a class="review-name" title="赵*潇">赵*潇</a>
-                                                <span class="title1">综合评分&nbsp;&nbsp;:&nbsp;&nbsp;</span>
-                                                <span class="score">4.4</span>
-                                                <span class="title1">面试职位&nbsp;&nbsp;:&nbsp;&nbsp;</span>
-                                                <span class="title">机票运营专员</span>
-                                                <span class="review-date">2018-08-24</span>
-                                            </div>
-                                            <div class="review-content">
-                                                <div>
-                                                    <span class="review-type">[面试评价]</span>
-                                                    <div class="interview-process">感觉蛮合适的，聊的也还行，期待进一步吧</div>
-                                                </div>
-                                            </div>
-                                            <div class="review-reply" data-index="0">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="review-area ">
+                                </script>
 
-                                        <div class="review-right">
-                                            <div class="review-stars ">
-                                                <div class="review-avater">
-                                                    <img class="lazy_img" alt="评价人头像" width="50" height="50"
-                                                         rel="nofollow"
-                                                         src="/company_details.html/www.lgstatic.com/www/static/company-c/modules/reviews-latest/img/avatar_default_25a41f6.png">
-                                                </div>
-                                                <a class="review-name" title="赵*潇">赵*潇</a>
-                                                <span class="title1">综合评分&nbsp;&nbsp;:&nbsp;&nbsp;</span>
-                                                <span class="score">4.4</span>
-                                                <span class="title1">面试职位&nbsp;&nbsp;:&nbsp;&nbsp;</span>
-                                                <span class="title">机票运营专员</span>
-                                                <span class="review-date">2018-08-24</span>
-                                            </div>
-                                            <div class="review-content">
-                                                <div>
-                                                    <span class="review-type">[面试评价]</span>
-                                                    <div class="interview-process">感觉蛮合适的，聊的也还行，期待进一步吧</div>
-                                                </div>
-                                            </div>
-                                            <div class="review-reply" data-index="0">
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
                             </div>
+                            <div class="pages">
+
+                                <span class="btn1 next" value="上一页" onclick="">上一页</span>
+                                <span class="btn1 next" value="下一页" onclick="">下一页</span>
+
+                            </div><br>
+                            <div class="login-01">
+                                <form action="" method="post" id="form1">
+                                    <li class="second">
+                                        <a href="#" class=" icon msg"></a>
+                                        <textarea  name="msg" value="Message" style="font-size: 20px" onfocus="this.value = '';" onblur="if (this.value == '' ) {this.value = 'Comments';}"></textarea>
+                                        </br>
+                                        <input type="text" name="userName" style="height: 25px;width: 80px;margin-left: 56px;margin-top: 10px"/> 请输入评价分数:
+                                        <input type="text" name="userName" style="height: 25px;width: 120px;margin-left: 56px;margin-top: 10px"/> 你面试的职位:
+                                        <div class="clear"></div>
+                                    </li>
+                                    <input type="reset"  value="清除">
+                                    <input type="submit"  value="发表" style="float: right">
+                                    <div class="clear"></div>
+                                </form>
+                            </div>
+
                         </div>
                     </div>
-                </div>
+                    <div class="interview_container item_container">
+
+                        <div id="allmap" style="height:500px;width:750px;margin-top: -40px;margin-left: -10px"></div>
+                        <div id="r-result" style="width:100%; font-size:14px;">
+                            <script type="text/javascript">
+                                var poi;
+                                var map = new BMap.Map("allmap");
+                                var localSearch = new BMap.LocalSearch(map);
+                                localSearch.enableAutoViewport(); //允许自动调节窗体大小
+                                map.clearOverlays();//清空原来的标注
+                                var address;
+                                $.ajax({
+                                        url: "/ShowCompany",
+                                        type: "post",
+                                        dataType:"json",
+                                        success: function (list) {
+                                            var address = list[0].COMPANY_ADDRESS;
+                                              alert(address);
+                                              localSearch.setSearchCompleteCallback(function (searchResult) {
+                                                poi = searchResult.getPoi(0);
+                                                var point = new BMap.Point(poi.point.lng,poi.point.lat);  // 创建点坐标
+                                                map.centerAndZoom(point, 15);
+                                                map.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件
+                                                map.addControl(new BMap.OverviewMapControl()); //添加默认缩略地图控件
+                                                map.addControl(new BMap.OverviewMapControl({ isOpen: true, anchor: BMAP_ANCHOR_BOTTOM_RIGHT }));   //右下角，打开
+                                                var marker = new BMap.Marker(point);  // 创建标注
+                                                map.addOverlay(marker);
+                                                // 将标注添加到地图中
+                                                map.panTo(point);
+                                                marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+                                                map.enableScrollWheelZoom(true);
+                                                map.enableContinuousZoom(true);
+                                            });
+                                            localSearch.search(address);
+                                        }
+                                    });
+                                // 用经纬度设置地图中心点
+                                function theLocation(){
+                                    map.clearOverlays();
+                                    var localSearch = new BMap.LocalSearch(map);
+                                    localSearch.enableAutoViewport(); //允许自动调节窗体大小
+                                    var new_point = new BMap.Point(poi.point.lng,
+                                        poi.point.lat);
+                                    var marker = new BMap.Marker(new_point);  // 创建标注
+                                    map.centerAndZoom(new_point, 15);
+                                    map.addOverlay(marker);              // 将标注添加到地图中
+                                    map.panTo(new_point);
+                                    marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+                                };
+
+                            </script>
+                            <form>
+                                <input id="address" style="width: 100px;height: 30px;background-color: #00b38a;color: white;float: right;margin-top: 20px"
+                                       type="button" value="公司位置" onclick="theLocation()" />
+                            </form>
+
+                        </div>
+
+                    </div>
             </div>
+
+        </div>
         </div>
         <div class='tab_div'>
             <div id="container_left1">
@@ -417,10 +431,88 @@
                                 <span class="next">下一页</span>
                                 <span class="last">尾页</span>
                             </div>
+                            <div class="footer">
+                                <div class="wrapper">
+                                    <div class="inner_wrapper">
+                                        <div class="footer_module_column">
+                                            <a class="footer_app">
+                                                <i class="footer_app_icon"></i>
+                                                下载握手APP
+                                                <img src="">
+                                            </a>
+                                            <a class="footer_mina">
+                                                <i class="footer_mina_item"></i>
+                                                微信小程序
+                                                <img>
+                                            </a>
+                                            <div class="footer_module_item">
+                                                <a class="footer_wechat">
+                                                    <i class="footer_wechat_icon"></i>
+                                                    握手微信
+                                                    <img>
+                                                </a>
+                                                <a class="footer_webo">
+                                                    <i class="footer_webo_icon"></i>
+                                                    拉钩微博
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="footer_module_right">
+                                            <div class="footer_module_business">
+                                                <p>企业服务</p>
+                                                <a>招聘解决方案</a>
+                                                <a>公司搜索</a>
+                                                <a>握手APP</a>
+                                            </div>
+                                            <div class="footer_module_business">
+                                                <p>用户帮助</p>
+                                                <a>帮助中心</a>
+                                                <a>用户服务协议</a>
+                                                <a>在线提问</a>
+                                            </div>
+                                            <div class="footer_module_business">
+                                                <p>联系方式</p>
+                                                <span>
+                            服务热线:<em>4000 1234 56 (9:00-18:00)</em>
+                        </span>
+                                                <a>
+                                                    企业服务邮箱:
+                                                    <em>qwB@shakehand.com</em>
+                                                </a>
+                                                <a>联系我们</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="copyright">
+                                        <div class="copyright_main">
+                                            <div class="copyright_main_left">
+                        <span class="copyright_title">
+                            <em>©</em>
+                            2018握手网
+                        </span>
+                                                <a>京ICP备12345678号-2</a>
+                                                <a class="footer_gongan">
+                                                    <i class="footer_gongan_i"></i>
+                                                    京公网安备 11010802024043
+                                                </a>
+                                                <div class="footer_jubao">
+                                                    <i class="jubao"></i>
+                                                    <p>
+                                                        <span>违法和不良信息举报</span>
+                                                        <strong>4006 2828 35</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <i class="footer_icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <div id="container_right">
             <div class="item_container" id="basic_container">
@@ -429,24 +521,32 @@
                     <ul>
                         <li>
                             <i class="type"></i>
-                            <span>移动互联网</span>
+                            <span id="showCOMPANY_SECTOR"></span>
                         </li>
                         <li>
                             <i class="process"></i>
-                            <span>C轮</span>
+                            <span id="showCOMPANY_STAGE"></span>
                         </li>
                         <li>
                             <i class="number"></i>
-                            <span>500-2000人</span>
+                            <span id="showCOMPANY_SCALE"></span>
                         </li>
                         <li>
                             <i class="address"></i>
-                            <span>北京</span>
+                            <span id="showCOMPANY_ADDRESS"></span>
+                        </li>
+                        <li>
+                            <i class="type"></i>
+                            <span id="showCOMPANY_EMAIL"></span>
+                        </li>
+                        <li>
+                            <i class="type"></i>
+                            <span id="showCOMPANY_TEL" ></span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="tags_container item_container" id="tags_container">
+            <div class="tags_container item_container" style="margin-top: 40px" id="tags_container">
                 <div class="item_ltitle">公司标签</div>
                 <div class="tags_warp">
                     <div class="item_content">
@@ -468,89 +568,16 @@
                 </div>
             </div>
         </div>
+
     </div>
-</div>
+
+
+
+
 
 
 <!--回到顶部图标-->
 <a class="back_top" title="回到顶部" href="#sh_header"></a>
-<!--底部 footer-->
-<div id="footer">
-    <div class="wrapper">
-        <div class="inner_wrapper">
-            <div class="footer_module_column">
-                <a class="footer_app">
-                    <i class="footer_app_icon"></i>
-                    下载握手APP
-                    <img src="">
-                </a>
-                <a class="footer_mina">
-                    <i class="footer_mina_item"></i>
-                    微信小程序
-                    <img>
-                </a>
-                <div class="footer_module_item">
-                    <a class="footer_wechat">
-                        <i class="footer_wechat_icon"></i>
-                        握手微信
-                        <img>
-                    </a>
-                    <a class="footer_webo">
-                        <i class="footer_webo_icon"></i>
-                        拉钩微博
-                    </a>
-                </div>
-            </div>
-            <div class="footer_module_right">
-                <div class="footer_module_business">
-                    <p>企业服务</p>
-                    <a>招聘解决方案</a>
-                    <a>公司搜索</a>
-                    <a>握手APP</a>
-                </div>
-                <div class="footer_module_business">
-                    <p>用户帮助</p>
-                    <a>帮助中心</a>
-                    <a>用户服务协议</a>
-                    <a>在线提问</a>
-                </div>
-                <div class="footer_module_business">
-                    <p>联系方式</p>
-                    <span>
-                            服务热线:<em>4000 1234 56 (9:00-18:00)</em>
-                        </span>
-                    <a>
-                        企业服务邮箱:
-                        <em>qwB@shakehand.com</em>
-                    </a>
-                    <a>联系我们</a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="copyright_main">
-                <div class="copyright_main_left">
-                        <span class="copyright_title">
-                            <em>©</em>
-                            2018握手网
-                        </span>
-                    <a>京ICP备12345678号-2</a>
-                    <a class="footer_gongan">
-                        <i class="footer_gongan_i"></i>
-                        京公网安备 11010802024043
-                    </a>
-                    <div class="footer_jubao">
-                        <i class="jubao"></i>
-                        <p>
-                            <span>违法和不良信息举报</span>
-                            <strong>4006 2828 35</strong>
-                        </p>
-                    </div>
-                </div>
-                <i class="footer_icon"></i>
-            </div>
-        </div>
-    </div>
-</div>
+
 </body>
 </html>

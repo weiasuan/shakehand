@@ -2,9 +2,9 @@
 <c3p0-config>
     <default-config>
         <property name="driverClass">com.mysql.jdbc.Driver</property>
-        <property name="jdbcUrl">jdbc:mysql://localhost:3306/shakehand?useUnicode=true&amp;characterEncoding=UTF-8</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/liuyanban?useUnicode=true&amp;characterEncoding=UTF-8</property>
         <property name="user">root</property>
-        <property name="password">123456</property>
+        <property name="password">Sunshaofei123</property>
 
 
         <!-- 初始化连接池中的连接数，取值应在minPoolSize与maxPoolSize之间，默认为3-->

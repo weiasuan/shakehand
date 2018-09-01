@@ -154,20 +154,20 @@ li {
     cursor: pointer;
 }
 .company_main .identification {
-    position: relative;
-    top: 7px;
-    padding: 5px 10px;
-    margin-left: 6px;
-    color: #fff;
-    background: #00b38a;
-    cursor: pointer;
-    border: 1px solid #00b38a;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    border-radius: 20px;
-}
+     position: relative;
+     top: 7px;
+     padding: 5px 10px;
+     margin-left: 6px;
+     color: #fff;
+     background: #00b38a;
+     cursor: pointer;
+     border: 1px solid #00b38a;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -ms-border-radius: 20px;
+     -o-border-radius: 20px;
+     border-radius: 20px;
+ }
 .company_main .identification i {
     background-image: url(//www.lgstatic.com/www/static/company-c/modules/top-info/img/approve@2x_cf64f4b.png);
     background-size: 16px 18px;
@@ -334,7 +334,7 @@ li {
     width: 100%;
     min-height: 20px;
     padding: 40px 0;
-    margin-top: 40px;
+    margin-top: 10px;
     border-top: 1px solid #e8e8e8;
 }
 .item_container .item_ltitle {
@@ -536,7 +536,6 @@ element.style {
     height: 30px;
 }
 #container_left {
-    position: relative;
     float: left;
     width: 710px;
     padding-right: 35px;
@@ -544,7 +543,14 @@ element.style {
     -moz-box-shadow: 8px 0 4px -4px #f5f5f5;
     box-shadow: 8px 0 4px -4px #f5f5f5;
 }
-
+.item_container {
+    position: relative;
+    width: 100%;
+    min-height: 20px;
+    padding: 40px 0;
+    margin-top: 10px;
+    border-top: 1px solid #e8e8e8;
+}
 .item_container .item_ltitle {
     position: absolute;
     top: -15px;
@@ -682,18 +688,17 @@ mCSB_container.mCS_no_scrollbar {
     width: 745px;
 }
 
-.title1 {
+.title1{
     margin-left: 10px;
 }
-.footer {
-    float: left;
+#footer {
+    background-color: #fff;
+    clear: both;
+    border-top: 1px solid #ebebeb;
     position: relative;
-    margin-top: 100px;
-
-
-
+    z-index: 1001;
 }
-.footer .wrapper {
+#footer .wrapper {
     margin: 0 auto;
     position: relative;
 }
@@ -726,13 +731,12 @@ mCSB_container.mCS_no_scrollbar {
 }
 
 curr_btn{
-!important;
+     !important;
 }
 .curr_div{
     display: block !important;
 }
 #container_left1 {
-    position: relative;
     float: left;
     width: 710px;
     padding-right: 35px;
@@ -1040,7 +1044,4 @@ form textarea {
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     margin-right: 12px;
-}
-.container1{
-    position: relative;
 }

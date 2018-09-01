@@ -5,7 +5,7 @@ public class DeliveryInfo {
     private int DELIVERY_ID;
     private int USER_ID;
     private int COMPANY_ID;
-    private int POSITION_ID;
+    private int JOB_ID;
     private int RESUME_ID;
     private Date DELIVERY_TIME;
     private String IS_CHECK;
@@ -35,12 +35,12 @@ public class DeliveryInfo {
         this.COMPANY_ID = COMPANY_ID;
     }
 
-    public int getPOSITION_ID() {
-        return POSITION_ID;
+    public int getJOB_ID() {
+        return JOB_ID;
     }
 
-    public void setPOSITION_ID(int POSITION_ID) {
-        this.POSITION_ID = POSITION_ID;
+    public void setJOB_ID(int JOB_ID) {
+        this.JOB_ID = JOB_ID;
     }
 
     public int getRESUME_ID() {

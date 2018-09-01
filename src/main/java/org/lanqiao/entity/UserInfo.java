@@ -13,6 +13,44 @@ public class UserInfo {
     private String USER_LOCK;
 
 
+    public UserInfo(String userName, String userSex, String userEmail, String userIntroduct, String userPosition) {
+        this.USER_NAME = userName;
+        this.USER_SEX = userSex;
+        this.USER_EMAIL = userEmail;
+        this.USER_INTRODUCT = userIntroduct;
+        this.USER_POSITION = userPosition;
+    }
+
+
+    //用于后台删除的构造方式
+    public UserInfo(int USER_ID) {
+        this.USER_ID = USER_ID;
+    }
+
+    // 用于后台添加数据
+    public UserInfo(String USER_TEL, String USER_PASSWORD, String USER_NAME, String USER_SEX, String USER_EMAIL, String USER_POSITION, String USER_INTRODUCT, String USER_PICADDRESS) {
+        this.USER_TEL = USER_TEL;
+        this.USER_PASSWORD = USER_PASSWORD;
+        this.USER_NAME = USER_NAME;
+        this.USER_SEX = USER_SEX;
+        this.USER_EMAIL = USER_EMAIL;
+        this.USER_POSITION = USER_POSITION;
+        this.USER_INTRODUCT = USER_INTRODUCT;
+        this.USER_PICADDRESS = USER_PICADDRESS;
+    }
+
+    //用于查找的构造方法
+    public UserInfo(String userName, String userSex, String userEmail, String userTel, String userIntroduct, String userPosition,String USER_LOCK) {
+        this.USER_NAME = userName;
+        this.USER_SEX = userSex;
+        this.USER_EMAIL = userEmail;
+        this.USER_TEL = userTel;
+        this.USER_INTRODUCT = userIntroduct;
+        this.USER_POSITION = userPosition;
+        this.USER_LOCK = USER_LOCK;
+    }
+
+
     public UserInfo(String userName, String userSex, String userEmail, String userTel, String userIntroduct, String userPosition) {
         this.USER_NAME = userName;
         this.USER_SEX = userSex;

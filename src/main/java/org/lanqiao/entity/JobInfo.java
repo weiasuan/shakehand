@@ -7,13 +7,40 @@ public  class JobInfo {
     private int JOB_ID;
     private int COMPANY_ID;
     private int POSITION_ID;
-    private int JOB_SALARY;
+    private String JOB_SALARY;
     private String JOB_ADDRESS;
     private String JOB_EXPERIENCE;
     private String JOB_EDUCATION;
     private String JOB_KIND;
     private Date JOB_RELEASETIME;
     private String JOB_DESCRIPTION;
+
+    public JobInfo() {
+
+    }
+
+    public JobInfo(int JOB_ID, int COMPANY_ID, int POSITION_ID, String JOB_SALARY, String JOB_ADDRESS, String JOB_EXPERIENCE, String JOB_EDUCATION, String JOB_KIND, Date JOB_RELEASETIME, String JOB_DESCRIPTION) {
+        this.JOB_ID = JOB_ID;
+        this.COMPANY_ID = COMPANY_ID;
+        this.POSITION_ID = POSITION_ID;
+        this.JOB_SALARY = JOB_SALARY;
+        this.JOB_ADDRESS = JOB_ADDRESS;
+        this.JOB_EXPERIENCE = JOB_EXPERIENCE;
+        this.JOB_EDUCATION = JOB_EDUCATION;
+        this.JOB_KIND = JOB_KIND;
+        this.JOB_RELEASETIME = JOB_RELEASETIME;
+        this.JOB_DESCRIPTION = JOB_DESCRIPTION;
+    }
+
+    public JobInfo(int POSITION_ID, String JOB_SALARY, String JOB_ADDRESS, String JOB_EXPERIENCE, String JOB_EDUCATION, String JOB_KIND, String JOB_DESCRIPTION) {
+        this.POSITION_ID = POSITION_ID;
+        this.JOB_SALARY = JOB_SALARY;
+        this.JOB_ADDRESS = JOB_ADDRESS;
+        this.JOB_EXPERIENCE = JOB_EXPERIENCE;
+        this.JOB_EDUCATION = JOB_EDUCATION;
+        this.JOB_KIND = JOB_KIND;
+        this.JOB_DESCRIPTION = JOB_DESCRIPTION;
+    }
 
     public int getJOB_ID() {
         return JOB_ID;
@@ -39,11 +66,11 @@ public  class JobInfo {
         this.POSITION_ID = POSITION_ID;
     }
 
-    public int getJOB_SALARY() {
+    public String getJOB_SALARY() {
         return JOB_SALARY;
     }
 
-    public void setJOB_SALARY(int JOB_SALARY) {
+    public void setJOB_SALARY(String JOB_SALARY) {
         this.JOB_SALARY = JOB_SALARY;
     }
 

@@ -2,7 +2,7 @@
     background-color: #fff;
     clear: both;
     border-top: 1px solid #ebebeb;
-    position: relative;
+    position: absolute;
     z-index: 1001;
 }
 .wrapper{

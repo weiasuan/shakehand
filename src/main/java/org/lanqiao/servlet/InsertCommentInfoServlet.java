@@ -1,8 +1,7 @@
 package org.lanqiao.servlet;
 
-import net.sf.json.JSONArray;
-import org.lanqiao.dao.CompanyInfoDaoImpl;
-import org.lanqiao.entity.CompanyInfo;
+import org.lanqiao.dao.CommentInfoDao;
+import org.lanqiao.entity.CommentInfo;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,17 +9,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
 
-@WebServlet("/CompanySearch")
-public class CompanySearchServlet extends HttpServlet {
+@WebServlet("/addMsg")
+public class InsertCommentInfoServlet extends HttpServlet {
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        CompanyInfoDaoImpl companyInfo= new CompanyInfoDaoImpl();
-        List<CompanyInfo> companyInfoList= companyInfo.companySearch();
-        JSONArray jsonarray= JSONArray.fromObject(companyInfoList);
-        PrintWriter out=response.getWriter();
-        out.print(jsonarray);
+        //接收表单提交的数据
+        String msg = request.getParameter("msg");
+        //将数据封装到实体类中
+        CommentInfo commentInfo = new CommentInfo();
+        //调用Dao
+        CommentInfoDao messageDao = new CommentInfoDao();
+        int res = messageDao.insert(commentInfo);
+        response.getWriter().print(res);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

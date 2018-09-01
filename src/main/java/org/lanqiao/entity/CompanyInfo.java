@@ -19,6 +19,7 @@ public class CompanyInfo {
     private String COMPANY_EVALUATION;
     private String COMPANY_LABEL;
     private String COMPANY_STATUS;
+    private String COMPANY_PICPRODUCT;
 
 
     public CompanyInfo(){
@@ -28,6 +29,14 @@ public class CompanyInfo {
         this.COMPANY_NAME = COMPANY_NAME;
         this.COMPANY_PROFILE = COMPANY_PROFILE;
         this.COMPANY_LABEL = COMPANY_LABEL;
+    }
+
+    public String getCOMPANY_PICPRODUCT() {
+        return COMPANY_PICPRODUCT;
+    }
+
+    public void setCOMPANY_PICPRODUCT(String COMPANY_PICPRODUCT) {
+        this.COMPANY_PICPRODUCT = COMPANY_PICPRODUCT;
     }
 
     public int getCOMPANY_ID() {

@@ -2,6 +2,8 @@ package org.lanqiao.dao;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
+import org.lanqiao.entity.CompanyInfo;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
 import java.sql.*;
@@ -185,6 +187,9 @@ public abstract class BaseDao<T> {
 		return count;
 	}
 
+
+
+
 	// 输出预编译的sql语句的具体内容(便于调试)
 	private void printSql(String sql, Object[] params) {
 		StringBuffer sb = new StringBuffer(sql);
@@ -206,7 +211,7 @@ public abstract class BaseDao<T> {
 					sb.replace(index, index + 1, "'" + this.valueOf(params[i]) + "'");
 				} else if (params[i] instanceof Object[]) {
 					sb.replace(index, index + 1, "'" + this.valueOf(params[i]) + "'");
-				} else if (params[i] instanceof java.sql.Date) {
+				} else if (params[i] instanceof Date) {
 					sb.replace(index, index + 1, " date '" + this.valueOf(params[i]) + "'");
 				} else if (params[i] instanceof java.util.Date) {
 					sb.replace(index, index + 1, "'java.util.Date'");

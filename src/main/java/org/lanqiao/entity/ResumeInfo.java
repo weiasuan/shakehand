@@ -23,7 +23,35 @@ public class ResumeInfo {
 
     public ResumeInfo() {
     }
+    public ResumeInfo(String RESUME_NAME,int RESUME_AGE,String RESUME_ADDRESS, String RESUME_ETHNIC,String RESUME_TEL) {
+        this.RESUME_NAME = RESUME_NAME;
+        this.RESUME_ETHNIC = RESUME_ETHNIC;
+        this.RESUME_AGE = RESUME_AGE;
+        this.RESUME_ADDRESS = RESUME_ADDRESS;
+        this.RESUME_TEL = RESUME_TEL;
+    }
 
+    public ResumeInfo(String RESUME_NAME, int RESUME_AGE, String RESUME_ADDRESS, String RESUME_ETHNIC,
+                      String RESUME_TEL, String RESUME_EMAIL, String RESUME_BIRTHPLACE, String RESUME_SALARY, String RESUME_HOBBY,
+                      String RESUME_EVALUATION, String RESUME_SEX, String RESUME_SKILL, String RESUME_EXPERIENCE,
+                      String RESUME_TRAINING, String RESUME_EDUCATION) {
+
+        this.RESUME_NAME = RESUME_NAME;
+        this.RESUME_SEX = RESUME_SEX;
+        this.RESUME_ETHNIC = RESUME_ETHNIC;
+        this.RESUME_AGE = RESUME_AGE;
+        this.RESUME_ADDRESS = RESUME_ADDRESS;
+        this.RESUME_TEL = RESUME_TEL;
+        this.RESUME_EMAIL = RESUME_EMAIL;
+        this.RESUME_BIRTHPLACE = RESUME_BIRTHPLACE;
+        this.RESUME_SALARY = RESUME_SALARY;
+        this.RESUME_EDUCATION = RESUME_EDUCATION;
+        this.RESUME_TRAINING = RESUME_TRAINING;
+        this.RESUME_SKILL = RESUME_SKILL;
+        this.RESUME_EXPERIENCE = RESUME_EXPERIENCE;
+        this.RESUME_HOBBY = RESUME_HOBBY;
+        this.RESUME_EVALUATION = RESUME_EVALUATION;
+    }
     public int getRESUME_ID() {
         return RESUME_ID;
     }

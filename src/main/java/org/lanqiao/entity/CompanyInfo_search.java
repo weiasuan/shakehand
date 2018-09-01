@@ -5,6 +5,7 @@ public class CompanyInfo_search {
     private String COMPANY_PROFILE;
     private String COMPANY_LABEL;
 
+
     public String getCOMPANY_NAME() {
         return COMPANY_NAME;
     }
